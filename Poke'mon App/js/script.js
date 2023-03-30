@@ -35,11 +35,11 @@ let pokemon_List= [0,1,2,3];
 	abilities: 'Static',
 	weight: '66.1 pounds'
 	}
-
+	function printArrayDetails(){
 	for (let i = 0; i < pokemon_List.length; i++) {
          if (pokemon_List[i].height > 50) {
                  document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height} inches) - Wow! That's a big Poke'mon!`+ '<br>'+ '<br>');
          } else {
             document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height} inches)`+ '<br>'+ '<br>');
          } 
-  }
+  	}
