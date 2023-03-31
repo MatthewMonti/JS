@@ -1,4 +1,4 @@
-let pokemon_List= [0,1,2,3];
+let pokemon_List= [
 	
 	pokemon_List[0]=
 	{
@@ -43,3 +43,4 @@ let pokemon_List= [0,1,2,3];
             document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height} inches)`+ '<br>'+ '<br>');
          } 
   	}
+	];
