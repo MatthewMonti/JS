@@ -35,6 +35,8 @@ let pokemon_List= [
 	abilities: 'Static',
 	weight: '66.1 pounds'
 	}
+	];
+
 	function printArrayDetails(){
 	for (let i = 0; i < pokemon_List.length; i++) {
          if (pokemon_List[i].height > 50) {
@@ -43,4 +45,3 @@ let pokemon_List= [
             document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height} inches)`+ '<br>'+ '<br>');
          } 
   	}
-	];
