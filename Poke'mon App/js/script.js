@@ -1,5 +1,5 @@
 let pokemonRepository = (function(){
-	let pokemon_List=[];
+	let pokemon_List=[]; //empty array
 	return{
 	add: function(pokemon_List) {
 	pokemon_List.push(pokemon_List);
