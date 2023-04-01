@@ -2,7 +2,7 @@ let pokemonRepository = (function(){
 	let pokemon_List=[];
 	
 	return{
-	add: function(pokemon) {
+	add: function(pokemon_List) {
 	pokemon_List.push(pokemon_List);
 	},
 	getAll: function(){
