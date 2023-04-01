@@ -1,4 +1,19 @@
-let pokemon_List= [];
+let pokemonRepository = (function)(){
+	let pokemon_List=[];
+	
+	return{
+	add: function(pokemon) {
+	pokemon_List.push(pokemon_List);
+	},
+	getAll: function(){
+	return pokemon_List;
+	}
+	};
+})();
+console.log(pokemonRepository.getAll()); // []
+pokemonRepository.add({name: 'Pikachu'});
+console.log(pokemonRepository.getAll()); // [{ name: 'Pikachu'}]
+
 	
 	pokemon_List[0]=
 	{
