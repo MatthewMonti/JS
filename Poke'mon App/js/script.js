@@ -37,7 +37,7 @@ let pokemon_List= [];
 	};
 
 	for (let i = 0; i < pokemon_List.length; i++) {
-         if (pokemonList[i].weight > 100) {
+         if (pokemon_List[i].weight > 100) {
                  document.write(`${pokemon_List[i].name} (weight: ${pokemon_List[i].weight}) - Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
          } else {
             document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].weightt})`+ '<br>'+ '<br>');
