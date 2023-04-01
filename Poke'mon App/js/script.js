@@ -1,6 +1,6 @@
 let pokemon_List= [];
 	
-	pokemon[0]=
+	pokemon_List[0]=
 	{
 	name:'Charizard',
 	height: 67,
@@ -9,7 +9,7 @@ let pokemon_List= [];
 	weight: '199.5 pounds'
 	};
 
-	pokemon[1]=
+	pokemon_List[1]=
 	{
 	name:'Pikachu',
 	height: 16,
@@ -18,7 +18,7 @@ let pokemon_List= [];
 	weight: '13.2 pounds'
 	};
 
-	pokemon[2]=
+	pokemon_List[2]=
 	{
 	name:'Squirtle',
 	height: 20,
@@ -27,7 +27,7 @@ let pokemon_List= [];
 	weight: '19.8 pounds'
 	};
 
-	pokemon[3]=
+	pokemon_List[3]=
 	{
 	name:'Raichu',
 	height: 31,
