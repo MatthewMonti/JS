@@ -1,4 +1,4 @@
-let pokemonRepository = (function)(){
+let pokemonRepository = (function(){
 	let pokemon_List=[];
 	
 	return{
