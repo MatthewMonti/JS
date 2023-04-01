@@ -1,8 +1,8 @@
 let pokemonRepository = (function(){
 	let pokemon_List=[]; //empty array
 	return{
-	add: function(pokemon_List) {
-	pokemon_List.push(pokemon_List);
+	add: function(pokemon) {
+	pokemon_List.push(pokemon);
 	},
 	getAll: function(){
 	return pokemon_List;
