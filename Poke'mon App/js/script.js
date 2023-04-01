@@ -35,7 +35,7 @@ let pokemon_List= [];
 	abilities: 'Static',
 	weight: '66.1 pounds'
 	};
-	pokemon_List.forEach(function(pokemon){
+	pokemon_List.forEach(function(pokemon_List){
 		if (pokemon_List[i].height > 60) {
 			document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height}) - Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
 		} else {
