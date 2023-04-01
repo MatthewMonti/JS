@@ -37,7 +37,7 @@ let pokemon_List= [];
 	}
 
 	function printArrayDetails(){
-	pokemon_List.forEach(function(name)) {
+	pokemon_List.forEach(function(name) {
   	console.log(name);
 	}{
          if (pokemon_List[i].height > 50) {
