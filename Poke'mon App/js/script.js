@@ -1,4 +1,4 @@
-let pokemon_List= [
+let pokemon_List= [];
 	
 	pokemon_List[0]=
 	{
@@ -35,7 +35,6 @@ let pokemon_List= [
 	abilities: 'Static',
 	weight: '66.1 pounds'
 	}
-	];
 
 	function printArrayDetails(){
 	for (let i = 0; i < pokemon_List.length; i++) {
