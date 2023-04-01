@@ -36,3 +36,12 @@ let pokemon_List= [];
 	weight: '66.1 pounds'
 	};
 
+	for (let i = 0; i < pokemon_List.length; i++) {
+		if (pokemon_List[i].height > 60) {
+				document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height}) - Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
+		} else {
+		   document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height})`+ '<br>'+ '<br>');
+		} 
+ }
+
+
