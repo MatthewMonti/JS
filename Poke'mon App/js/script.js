@@ -38,9 +38,9 @@ let pokemon_List= [];
 
 	for (let i = 0; i < pokemon_List.length; i++) {
 		if (pokemon_List[i].height > 60) {
-				console.log(`${pokemon_List[i].name} (height: ${pokemon_List[i].height}) - Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
+			document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height}) - Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
 		} else {
-		  console.log(`${pokemon_List[i].name} (height: ${pokemon_List[i].height})`+ '<br>'+ '<br>');
+		  document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].height})`+ '<br>'+ '<br>');
 		} 
  }
 
