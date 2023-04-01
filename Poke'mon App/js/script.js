@@ -1,6 +1,6 @@
 let pokemon_List= [];
 	
-	pokemonList[0]=
+	pokemon_List[0]=
 	{
 	name:'Charizard',
 	height: '67 inches',
@@ -9,7 +9,7 @@ let pokemon_List= [];
 	weight: '199.5 pounds'
 	};
 
-	pokemonList[1]=
+	pokemon_List[1]=
 	{
 	name:'Pikachu',
 	height: '16 inches',
@@ -18,7 +18,7 @@ let pokemon_List= [];
 	weight: '13.2 pounds'
 	};
 
-	pokemonList[2]=
+	pokemon_List[2]=
 	{
 	name:'Squirtle',
 	height: '20 inches',
@@ -27,7 +27,7 @@ let pokemon_List= [];
 	weight: '19.8 pounds'
 	};
 
-	pokemonList[3]=
+	pokemon_List[3]=
 	{
 	name:'Raichu',
 	height: '31 inches',
@@ -36,10 +36,10 @@ let pokemon_List= [];
 	weight: '66.1 pounds'
 	};
 
-	for (let i = 0; i < pokemonList.length; i++) {
+	for (let i = 0; i < pokemon_List.length; i++) {
          if (pokemonList[i].weight > 100) {
-                 document.write(`${pokemonList[i].name} (weight: ${pokemonList[i].weight}) - Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
+                 document.write(`${pokemon_List[i].name} (weight: ${pokemon_List[i].weight}) - Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
          } else {
-            document.write(`${pokemonList[i].name} (height: ${pokemonList[i].weightt})`+ '<br>'+ '<br>');
+            document.write(`${pokemon_List[i].name} (height: ${pokemon_List[i].weightt})`+ '<br>'+ '<br>');
          } 
   }
