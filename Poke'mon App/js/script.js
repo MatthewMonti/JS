@@ -13,7 +13,7 @@ console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({name: 'Pikachu'});
 console.log(pokemonRepository.getAll()); // [{ name: 'Pikachu'}]
 
-let pokemon_List=[];	
+let pokemon_List=[
 	pokemon[0]=
 	{
 	name:'Charizard',
@@ -48,7 +48,7 @@ let pokemon_List=[];
 	category: 'Mouse',
 	abilities: 'Static',
 	weight: '66.1 pounds'
-	};
+	}];
 	pokemon_List.forEach(function(pokemon_List){
 		if (pokemon_List.height > 60)
 			document.write(`${pokemon_List.name} (height: ${pokemon_List.height}) Wow! That's a heavy Poke'mon!`+ '<br>'+ '<br>');
