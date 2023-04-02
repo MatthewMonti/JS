@@ -54,9 +54,9 @@ let pokemon_List=[
 // Definition of printList function that should be looped over each array item (printing Pokemon details, adding 'Wow, that's big' to any Pokemon which is equal or higher than 1.5 m)
 function printList(pokemon) {
     if (pokemon.height >=60) {
-        document.write('<h2>' + pokemon.name + '</h2><p> height: ' + pokemon.height + ' m</p><p style="color: #CC0000">Wow, that\'s big!</p>');
+        document.write('<h2>' + pokemon.name + '</h2><p> height: ' + pokemon.height + ' inches</p><p style="color: #CC0000">Wow, that\'s a big Poke\'mon!</p>');
     } else {
-        document.write('<h2>' + pokemon.name + '</h2><p> height: ' + pokemon.height + ' m</p>');
+        document.write('<h2>' + pokemon.name + '</h2><p> height: ' + pokemon.height + ' inches</p>');
     }
 }
 //  Calling the forEach method to run printList for every array item of the pokemonList array. (Has to be accessed by calling the getAll() function.) ForEach method takes functions as arguments.
