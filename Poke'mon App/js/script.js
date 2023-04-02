@@ -21,7 +21,7 @@ let pokemon_List=[
 	category: 'Frame',
 	abilities: 'Blaze',
 	weight: '199.5 pounds'
-	};
+	};,
 
 	pokemon[1]=
 	{
@@ -30,7 +30,7 @@ let pokemon_List=[
 	category: 'Mouse',
 	abilities: 'Static',
 	weight: '13.2 pounds'
-	};
+	};,
 
 	pokemon[2]=
 	{
@@ -39,7 +39,7 @@ let pokemon_List=[
 	category: 'Tiny Turtle',
 	abilities: 'Torrent',
 	weight: '19.8 pounds'
-	};
+	};,
 
 	pokemon[3]=
 	{
