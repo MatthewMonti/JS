@@ -1,18 +1,5 @@
 // The array pokemonList is wrapped in an IIFE function to make its elements inaccessible from the outside. Exception: the two well-defined keys that are returned by the IIFE function
 let pokemonRepository = (function(){
-	let pokemon_List=[]; //empty array
-	return{
-	add: function(pokemon) {
-	pokemon_List.push(pokemon);
-	},
-	getAll: function(){
-	return pokemon_List;
-	}
-	};
-})();
-console.log(pokemonRepository.getAll()); // []
-pokemonRepository.add({name: 'Pikachu'});
-console.log(pokemonRepository.getAll()); // [{ name: 'Pikachu'}]
 
 // Array definition
 let pokemon_List=[
