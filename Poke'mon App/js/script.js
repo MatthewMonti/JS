@@ -13,8 +13,8 @@ console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({name: 'Pikachu'});
 console.log(pokemonRepository.getAll()); // [{ name: 'Pikachu'}]
 
-	
-	pokemon_List[0]=
+let pokemon_List=[];	
+	pokemon[0]=
 	{
 	name:'Charizard',
 	height: 67,
@@ -23,7 +23,7 @@ console.log(pokemonRepository.getAll()); // [{ name: 'Pikachu'}]
 	weight: '199.5 pounds'
 	};
 
-	pokemon_List[1]=
+	pokemon[1]=
 	{
 	name:'Pikachu',
 	height: 16,
@@ -32,7 +32,7 @@ console.log(pokemonRepository.getAll()); // [{ name: 'Pikachu'}]
 	weight: '13.2 pounds'
 	};
 
-	pokemon_List[2]=
+	pokemon[2]=
 	{
 	name:'Squirtle',
 	height: 20,
@@ -41,7 +41,7 @@ console.log(pokemonRepository.getAll()); // [{ name: 'Pikachu'}]
 	weight: '19.8 pounds'
 	};
 
-	pokemon_List[3]=
+	pokemon[3]=
 	{
 	name:'Raichu',
 	height: 31,
