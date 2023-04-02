@@ -74,6 +74,3 @@ function printList(pokemon) {
 }
 //  Calling the forEach method to run printList for every array item of the pokemonList array. (Has to be accessed by calling the getAll() function.) ForEach method takes functions as arguments.
 pokemonRepository.getAll().forEach(printList);
-
-
-		
