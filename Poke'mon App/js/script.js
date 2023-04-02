@@ -22,24 +22,21 @@ let pokemon_List=[
 	category: 'Frame',
 	abilities: 'Blaze',
 	weight: '199.5 pounds'
-	}
-
+	},
 	{
 	name:'Pikachu',
 	height: 16,
 	category: 'Mouse',
 	abilities: 'Static',
 	weight: '13.2 pounds'
-	}
-
+	},
 	{
 	name:'Squirtle',
 	height: 20,
 	category: 'Tiny Turtle',
 	abilities: 'Torrent',
 	weight: '19.8 pounds'
-	}
-
+	},
 	{
 	name:'Raichu',
 	height: 31,
