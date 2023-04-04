@@ -20,3 +20,7 @@ let  pokemonList =[
 	types:["Compound Eyes"]
 }
 ];
+
+pokemonList.forEach(function(pokemon){
+	console.log(pokemon);
+});
