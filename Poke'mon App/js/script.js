@@ -1,7 +1,4 @@
-// The array pokemonList is wrapped in an IIFE function to make its elements inaccessible from the outside. Exception: the two well-defined keys that are returned by the IIFE function
-let pokemonRepository = (function(){
 
-// Array definition
 let pokemon_List=[
 	{
 	name:'Charizard',
@@ -61,3 +58,5 @@ function printList(pokemon) {
 }
 //  Calling the forEach method to run printList for every array item of the pokemonList array. (Has to be accessed by calling the getAll() function.) ForEach method takes functions as arguments.
 pokemonRepository.getAll().forEach(printList);
+
+// test comment
