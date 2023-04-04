@@ -1,4 +1,5 @@
-let  pokemonList =[
+let pokemonRepository= function(){
+	let pokemonList= [
 {
 	name: "Bulbasaur",
 	height: 28,
@@ -20,7 +21,14 @@ let  pokemonList =[
 	types:["Compound Eyes"]
 }
 ];
-
+return{
+	add: function(pokemon){
+		pokemonList.push(pokemon);
+	},
+	getAll:function() {
+	return pokemonList;
+	}
+}
 pokemonList.forEach(function(pokemon){
 	console.log(pokemon);
-});
+})};
