@@ -32,6 +32,6 @@ return{
 })();
 
 
-pokemonList.forEach(function(pokemon){
+pokemonRepository.getAll().forEach(function(pokemon){
 	console.log(pokemon);
 });
