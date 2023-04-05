@@ -28,7 +28,7 @@ return{
 	getAll:function() {
 	return pokemonList;
 	}
-}
+};
 pokemonList.forEach(function(pokemon){
 	console.log(pokemon);
 })};
