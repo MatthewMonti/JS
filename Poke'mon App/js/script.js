@@ -1,4 +1,4 @@
-let pokemonRepository= function(){
+let pokemonRepository= (function(){
 	let pokemonList= [
 {
 	name: "Bulbasaur",
@@ -30,6 +30,8 @@ return{
 	}
 };
 })();
+
+
 pokemonList.forEach(function(pokemon){
 	console.log(pokemon);
 });
