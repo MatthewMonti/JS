@@ -31,4 +31,4 @@ return{
 };
 pokemonList.forEach(function(pokemon){
 	console.log(pokemon);
-})};
+})();)
