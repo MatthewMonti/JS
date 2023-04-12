@@ -6,12 +6,12 @@
   border: 0;
   font-size:1.8rem;
   font-weight:600;
-  margin: 2rem 0;
+  margin: 2rem;
   background:red;
   color:white;
   cursor:pointer;
   text-align:center;
-  padding:75%,50%;
+  width:75%;
 }
 .card:hover{
   background-color: rgba(255, 0, 0, 0.587);
