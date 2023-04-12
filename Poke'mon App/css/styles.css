@@ -1,3 +1,7 @@
 .pokemon-list{
   list-style: none;
 }
+.button{
+  padding:20;
+  margin:10;
+}
