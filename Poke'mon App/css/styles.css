@@ -1,7 +1,7 @@
 .pokemon-list{
   list-style: none;
 }
-button{
+.button{
   padding:20;
   margin:10;
 }
