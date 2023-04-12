@@ -2,7 +2,7 @@
   list-style: none;
 }
 .card{
-  border-radious:20px;
+  border-radius:20px;
   border: 0;
   font-size:1.8rem;
   font-weight:600;
@@ -11,5 +11,8 @@
   background:red;
   color:white;
   cursor:pointer;
+}
+.card:hover{
+  background-color: rgba(255, 0, 0, 0.587);
 }
 
