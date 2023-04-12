@@ -1,7 +1,15 @@
 .pokemon-list{
   list-style: none;
 }
-.button{
-  padding: 20;
-  margin: 10;
+.card{
+  border-radious:20px;
+  border: 0;
+  font-size:1.8rem;
+  font-weight:600;
+  margin: 1rem 0;
+  padding:10rem 5rem;
+  background:red;
+  color:white;
+  cursor:pointer;
 }
+
