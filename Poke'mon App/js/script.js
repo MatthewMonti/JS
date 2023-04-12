@@ -33,5 +33,6 @@ return{
 
 
 pokemonRepository.getAll().forEach(function(pokemon){
+	const pokemon_info = document.querySelector("li");
 	console.log(pokemon);
 });
