@@ -36,6 +36,6 @@ console.log(pokemon);
 document.querySelector('ul');
 document.createElement('li');
 document.createElement('button');
-(button.classList.add(style_button)
+button.classList.add(style_button)
 
 )};
