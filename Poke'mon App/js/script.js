@@ -31,7 +31,7 @@ return{
 };
 })();
 
-pokemonList.forEach((pokemon) => {
+pokemonRepository.forEach((pokemon) => {
 	console.log(pokemon);
 	document.querySelector('ul');
 	document.createElement('li');
