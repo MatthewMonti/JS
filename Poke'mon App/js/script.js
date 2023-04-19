@@ -31,10 +31,12 @@ return{
 };
 })();
 
-pokemonRepository.forEach((pokemon) => {
-	console.log(pokemon);
-	document.querySelector('ul');
-	document.createElement('li');
-	document.createElement('button');
-	button.classList.add(button_style);
+let pokemons = pokemonRepository.getAll();
+
+pokemons.forEach(function(pokemon) {
+  console.log(pokemon.name);
+  document.querySelector('ul');
+  document.createElement('li');
+  document.createElement('button');
+  button.classList.add(button_style);
 });
