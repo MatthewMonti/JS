@@ -35,11 +35,9 @@ let pokemons = pokemonRepository.getAll();
 
 pokemons.forEach(function(pokemon) {
 let listItem = document.querySelector('ul');
-let listItem = document.createElement('li'));
+let pokemon = document.createElement('li'));
 let button = document.createElement('button'));
-let  = document.querySelector('li');
-let button = document.createElement('button');
-button.innerText = querySelector('li');
+button.innerText ="pokemon";
 container.appendChild(button);
 console.log(mainTitle.innerText);
 });
