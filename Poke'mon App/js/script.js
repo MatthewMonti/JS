@@ -35,8 +35,4 @@ let pokemons = pokemonRepository.getAll();
 
 pokemons.forEach(function(pokemon) {
   console.log(pokemon.name);
-  document.querySelector('ul');
-  document.createElement('li');
-  document.createElement('button');
-  button.classList.add('button_style');
 });
