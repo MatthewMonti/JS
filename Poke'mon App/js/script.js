@@ -22,23 +22,9 @@ let pokemonRepository= (function(){
 }
 ];
 return{
-	add: function(pokemon){
-		pokemonList.push(pokemon);
-	},
-	getAll:function() {
-	return pokemonList;
-	}
+	"name":name,
+	"height":height,
+	"types":types
 };
 })();
-
-let pokemons = pokemonRepository.getAll();
-
-pokemons.forEach(function(pokemon) {
-let listItem = document.querySelector('ul');
-let pokemon = document.createElement('li'));
-let button = document.createElement('button'));
-button.innerText ="pokemon";
-container.appendChild(button);
-console.log(mainTitle.innerText);
-});
 
