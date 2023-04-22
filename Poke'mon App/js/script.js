@@ -21,10 +21,7 @@ let pokemonRepository= (function(){
 	types: ["Compound Eyes"]
 },
 ];
-return{
-	"name": name;
-	"height": height;
-	"types": types;
+return result;
 };
 })();
 
