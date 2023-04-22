@@ -19,8 +19,7 @@ let pokemonRepository= (function(){
 	name: "Butterfree",
 	height:"43",
 	types: ["Compound Eyes"]
-},
-];
+}];
 return result;
 }
 })();
