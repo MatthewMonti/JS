@@ -22,6 +22,6 @@ let pokemonRepository= (function(){
 },
 ];
 return result;
-};
+}
 })();
 
