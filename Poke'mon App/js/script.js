@@ -4,7 +4,7 @@ let pokemonRepository= (function(){
 	name: "Bulbasaur"
 	height: 28
 	types:["Overgrow"]
-	,
+],
 [
 	name: "Squirtle"
 	height: 20
