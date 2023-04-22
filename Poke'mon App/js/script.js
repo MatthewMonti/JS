@@ -1,5 +1,6 @@
 let pokemonRepository= (function(){
 	let pokemonList= [
+[
 	name: "Bulbasaur",
 	height: 28,
 	types:["Overgrow"]
