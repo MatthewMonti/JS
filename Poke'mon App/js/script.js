@@ -22,9 +22,9 @@ let pokemonRepository= (function(){
 },
 ];
 return{
-	"name": name
-	"height": height
-	"types": types
+	"name": name;
+	"height": height;
+	"types": types;
 };
 })();
 
