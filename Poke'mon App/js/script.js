@@ -21,6 +21,5 @@ let pokemonRepository= (function(){
 	types: ["Compound Eyes"]
 }];
 return pokemonList;
-console.log(pokemonList);
 })();
-
+console.log(pokemonRepository);
