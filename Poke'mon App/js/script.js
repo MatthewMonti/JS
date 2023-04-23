@@ -24,5 +24,5 @@ return pokemonList;
 })();
 console.log(pokemonRepository);
 let LIST = document.querySelector('.pokemonList');
-LIST.innerHTML = '<button></button>'
+LIST.innerHTML = '<button>pokemonRepository</button>'
 
