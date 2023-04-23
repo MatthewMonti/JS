@@ -23,3 +23,6 @@ let pokemonRepository= (function(){
 return pokemonList;
 })();
 console.log(pokemonRepository);
+let LIST = document.querySelector('.pokemonList');
+LIST.innerHTML = '<button></button>'
+
