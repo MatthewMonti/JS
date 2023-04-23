@@ -22,7 +22,9 @@ let pokemonRepository= (function(){
 }];
 return pokemonList;
 })();
-console.log(pokemonRepository);
+console.log(pokemonRepository.getALL());
 let LIST = document.querySelector('.pokemonList');
-LIST.innerHTML = '<button>pokemonRepository</button>'
-
+let Pokemon = document.createElement("li");
+let button = document.createElement("button");
+button.innerText = "placeholder";
+button.classList = add("button-class")
