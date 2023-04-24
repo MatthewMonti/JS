@@ -31,11 +31,10 @@ console.log(pokemonRepository.getAll());
 
 pokemonRepository.getAll().forEach(function (pokemon) {
 let pokemon_array = document.querySelector(".pokemonList");
-let pokemon = document.createElement("li");
+let pokemon_item = document.createElement("li");
 let button = document.createElement("button");
 button.innerText = "placeholder";
 button.classList.add("button-class");
 listpokemon.appendChild(button);
-pokemon_array.appendChild(pokemon);
-	
+pokemon_array.appendChild(pokemon_item);
 });
