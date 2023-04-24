@@ -24,4 +24,4 @@ function getAll() {
 return pokemonList;
 }
 })();
-console.log(pokemonRepository.getAll());
+console.log(pokemonRepository);
