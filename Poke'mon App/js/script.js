@@ -22,7 +22,6 @@ let pokemonRepository= (function(){
 }];
 return pokemonList;
 })();
-console.log(pokemonRepository.getAll());
 
 pokemonRepository.getAll().forEach(function (pokemon) {
 let LIST = document.querySelector('.pokemonList');
