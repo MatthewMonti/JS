@@ -22,9 +22,9 @@ let pokemonRepository= (function(){
 }];
 return pokemonList;
 })();
-console.log(pokemonRepository.getALL());
+console.log(pokemonRepository.getAll());
 
-pokemonRepository.getALL().forEach(function (pokemon) {
+pokemonRepository.getAll().forEach(function (pokemon) {
 let LIST = document.querySelector('.pokemonList');
 let Pokemon = document.createElement("li");
 let button = document.createElement("button");
