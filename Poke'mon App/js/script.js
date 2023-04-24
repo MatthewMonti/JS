@@ -35,6 +35,6 @@ let pokemon_item = document.createElement("li");
 let button = document.createElement("button");
 button.innerText = "placeholder";
 button.classList.add("button-class");
-listpokemon.appendChild(button);
+pokemon_item.appendChild(button);
 pokemon_array.appendChild(pokemon_item);
 });
