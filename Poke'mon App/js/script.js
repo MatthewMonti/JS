@@ -33,7 +33,7 @@ pokemonRepository.getAll().forEach(function (pokemon) {
 let pokemon_array = document.querySelector(".pokemon-list");
 let pokemon_item = document.createElement("li");
 let button = document.createElement("button");
-button.innerText = "placeholder";
+button.innerText = pokemon.name;
 button.classList.add("button-class");
 pokemon_item.appendChild(button);
 pokemon_array.appendChild(pokemon_item);
