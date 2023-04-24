@@ -22,11 +22,3 @@ let pokemonRepository= (function(){
 }];
 return pokemonList;
 })();
-
-pokemonRepository.getAll().forEach(function (pokemon) {
-let LIST = document.querySelector('.pokemonList');
-let Pokemon = document.createElement("li");
-let button = document.createElement("button");
-button.innerText = "placeholder";
-button.classList = add("button-class")
-});
