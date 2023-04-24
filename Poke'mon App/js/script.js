@@ -21,4 +21,4 @@ let pokemonRepository= (function(){
 	types: ["Compound Eyes"]
 }];
 })();
-console.log(pokemonRepository).getAll
+console.log(pokemonRepository.getAll());
