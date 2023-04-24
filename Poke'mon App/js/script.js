@@ -34,7 +34,7 @@ let pokemon_array = document.querySelector(".pokemon-list");
 let pokemon_item = document.createElement("li");
 let button = document.createElement("button");
 button.innerText = pokemon.name;
-button.classList.add("button-class");
+button.classList.add("button_style");
 pokemon_item.appendChild(button);
 pokemon_array.appendChild(pokemon_item);
 });
