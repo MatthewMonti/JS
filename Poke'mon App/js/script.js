@@ -23,5 +23,8 @@ let pokemonRepository= (function(){
 function getAll() {
 return pokemonList;
 }
+return {
+getAll:getAll
+};
 })();
-console.log(pokemonRepository);
+console.log(pokemonRepository.getAll());
