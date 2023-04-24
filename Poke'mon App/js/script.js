@@ -30,7 +30,7 @@ getAll:getAll
 console.log(pokemonRepository.getAll());
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-let pokemon_array = document.querySelector(".pokemonList");
+let pokemon_array = document.querySelector(".pokemon-list");
 let pokemon_item = document.createElement("li");
 let button = document.createElement("button");
 button.innerText = "placeholder";
