@@ -20,5 +20,8 @@ let pokemonRepository= (function(){
 	height:"43",
 	types: ["Compound Eyes"]
 }];
+function getAll() {
+return pokemonList;
+}
 })();
-console.log(pokemonRepository.getAll(pokemonList));
+console.log(pokemonRepository.getAll());
