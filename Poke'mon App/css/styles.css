@@ -36,3 +36,7 @@ justify-content:center;
 html{
   background-color:red;
 }
+.container{
+  display:flex;
+  justify-content:center;
+}
