@@ -26,7 +26,8 @@ function getAll() {
 return pokemonList;
 }
 return {
-getAll:getAll
+add:add,
+getAll:getAll,
 };
 })();
 console.log(pokemonRepository.getAll());
