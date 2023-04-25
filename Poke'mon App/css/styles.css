@@ -1,7 +1,6 @@
 .pokemon-list{
   list-style: none;
   display:flex 0 0 flex;
-  width:fit-content;
 }
 .button_style{
   border-radius:20px;
@@ -31,7 +30,6 @@ font-family: pokemon_text;
 color:yellow;
 display:flex;
 justify-content:center;
-width:fit-content;
 }
 
 html{
@@ -40,6 +38,5 @@ html{
 .container{
   display:flex;
   justify-content:center;
-  width:fit-content;
 }
 
