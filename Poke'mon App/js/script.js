@@ -20,7 +20,7 @@ let pokemonRepository= (function(){
 	height:"43",
 	types: ["Compound Eyes"]
 }];
-function add {
+function add(){
 name: "Mewtwo", 
 height: "79" , 
 types: ["Psychic"] };
