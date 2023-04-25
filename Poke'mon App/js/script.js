@@ -32,12 +32,23 @@ function add(pokemon) {
 		console.log("pokemon is not correct");
 	}
 }
+function addlistitem{
+	let pokemon_array = document.querySelector(".pokemon-list");
+	let pokemon_item = document.createElement("li");
+	let button = document.createElement("button");
+	button.innerText = pokemon.name;
+	button.classList.add("button_style");
+	pokemon_item.appendChild(button);
+	pokemon_array.appendChild(pokemon_item);
+}
+	
 function getAll() {
 return pokemonList;
 }
 return {
 add:add,
 getAll:getAll,
+addlistitem: addlistitem
 };
 })();
 
@@ -45,11 +56,4 @@ console.log(pokemonRepository.getAll());
 pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-let pokemon_array = document.querySelector(".pokemon-list");
-let pokemon_item = document.createElement("li");
-let button = document.createElement("button");
-button.innerText = pokemon.name;
-button.classList.add("button_style");
-pokemon_item.appendChild(button);
-pokemon_array.appendChild(pokemon_item);
 });
