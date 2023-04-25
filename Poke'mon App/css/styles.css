@@ -1,5 +1,6 @@
 .pokemon-list{
   list-style: none;
+  justify-content:center;
 }
 .button_style{
   border-radius:20px;
