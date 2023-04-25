@@ -15,7 +15,7 @@
   width:75%;
   height: 600px;
   width:400px;
-  align:center;
+  text-align:center;
 }
 .button_style:hover{
   background-color: rgb(0, 106, 255);
