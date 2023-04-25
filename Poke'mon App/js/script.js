@@ -20,12 +20,18 @@ let pokemonRepository= (function(){
 	height:"43",
 	types: ["Compound Eyes"]
 }];
-function add(){
-name: "Mewtwo", 
-height:"79", 
-types: ["Psychic"] };
-
-
+function add(pokemon) {
+	if (
+		typeof pokemon === "object" &&
+		"name" in pokemon &&
+		"height" in pokemon &&
+		"types" in pokemon
+	) {
+		pokemonRepository.push(pokemon);
+	} else {
+		console.log("pokemon is not correct");
+	}
+}
 function getAll() {
 return pokemonList;
 }
@@ -34,6 +40,7 @@ add:add,
 getAll:getAll,
 };
 })();
+
 console.log(pokemonRepository.getAll());
 pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 
