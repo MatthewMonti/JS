@@ -4,17 +4,18 @@
 .button_style{
   border-radius:20px;
   border: 0;
+  font-family:pokemon_text;
   font-size:1.8rem;
   font-weight:600;
   margin: 2rem;
-  background:red;
-  color:white;
+  background:blue;
+  color:yellow;
   cursor:pointer;
   text-align:center;
   width:75%;
   padding:2rem 3rem;
 }
 .button_style:hover{
-  background-color: rgba(255, 0, 0, 0.587);
+  background-color: rgba(0, 89, 255, 0.587);
 }
 
