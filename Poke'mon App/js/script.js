@@ -30,7 +30,7 @@ getAll:getAll
 };
 })();
 console.log(pokemonRepository.getAll());
-pokemonRepository.add {(name: "Mewtwo" height: "79" , types: ["Psychic"] )};
+pokemonRepository.add ({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 
 pokemonRepository.getAll().forEach(function (pokemon) {
 let pokemon_array = document.querySelector(".pokemon-list");
