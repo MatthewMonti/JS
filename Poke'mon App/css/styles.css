@@ -14,9 +14,7 @@
   display:flex 0 0 flex;
   margin-left:auto;
   margin-right:auto;
-  padding-left:auto;
-  padding-right:auto;
-  margin-bottom:50px;
+  margin-bottom:auto;
 }
 .button_style:hover{
   background-color: rgb(0, 106, 255);
@@ -33,9 +31,7 @@ display:flex;
 justify-content:center;
 margin-left:auto;
 margin-right:auto;
-padding-left:auto;
-padding-right:auto;
-margin-bottom:50px;
+margin-bottom:auto;
 }
 
 html{
