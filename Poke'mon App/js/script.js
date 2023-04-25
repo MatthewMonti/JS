@@ -20,7 +20,11 @@ let pokemonRepository= (function(){
 	height:"43",
 	types: ["Compound Eyes"]
 }];
-	
+function add {
+name: "Mewtwo", 
+height: "79" , 
+types: ["Psychic"] };
+
 
 function getAll() {
 return pokemonList;
