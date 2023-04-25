@@ -25,5 +25,9 @@
 
 h1{
 font-family: pokemon_text;
-font-color:yellow;
+color:yellow;
+}
+
+html{
+  background-color:red;
 }
