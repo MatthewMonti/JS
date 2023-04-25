@@ -32,7 +32,7 @@ function add(pokemon) {
 		console.log("pokemon is not correct");
 	}
 }
-function addlistitem{
+function addlistitem(pokemon){
 	let pokemon_array = document.querySelector(".pokemon-list");
 	let pokemon_item = document.createElement("li");
 	let button = document.createElement("button");
