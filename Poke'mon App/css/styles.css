@@ -15,7 +15,7 @@
   height: 600px;
   width:400px;
   display:flex 0 0 flex;
-  margin:30px;
+  padding:50px;
 }
 .button_style:hover{
   background-color: rgb(0, 106, 255);
@@ -39,10 +39,3 @@ html{
   display:flex;
   justify-content:center;
 }
-
-
-
-@media(max-width:1200px);
-
-@media (max-width:600px);
-
