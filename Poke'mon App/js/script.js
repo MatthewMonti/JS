@@ -27,7 +27,7 @@ function add(pokemon) {
 		"height" in pokemon &&
 		"types" in pokemon
 	) {
-		pokemonRepository.push(pokemon);
+	pokemonList.push(pokemon);
 	} else {
 		console.log("pokemon is not correct");
 	}
