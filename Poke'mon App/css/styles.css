@@ -34,6 +34,11 @@ font-family: pokemon_text;
 color:yellow;
 display:flex;
 justify-content:center;
+margin-left:auto;
+margin-right:auto;
+padding-left:auto;
+padding-right:auto;
+margin-bottom:50px;
 }
 
 html{
