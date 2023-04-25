@@ -1,7 +1,6 @@
 .pokemon-list{
   list-style: none;
   display:flex;
-  justify-content:center;
   text-align:center;
 }
 .button_style{
@@ -18,7 +17,6 @@
   height: 600px;
   width:400px;
   display:flex;
-  justify-content:center;
   text-align:center;
 }
 .button_style:hover{
