@@ -19,5 +19,6 @@
   background-color: rgba(0, 89, 255, 0.587);
 }
 @font-face{
-  font-family:
-  src(..
+  font-family: pokemon_text;
+  src:(pokemon_text.png)
+}
