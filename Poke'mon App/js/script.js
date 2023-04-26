@@ -51,9 +51,9 @@ getAll:getAll,
 addlistitem: addlistitem
 };
 
-let button = document.querySelector('button');
-pokemon_item.addEventListener('click', function (pokemon.name) {
-  console.log(pokemon.name);
+let pokemon_item= document.querySelector('button');
+pokemon_item.addEventListener('click', function (pokemon_item) {
+  console.log(pokemon_item);
 });	
 	
 })();
