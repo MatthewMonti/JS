@@ -35,7 +35,7 @@ html{
   background-color:red;
 }
 
-@media(max-width:1000) {
+@media(max-width:1000px) {
   .button_style{
     height:450px;
     width:300px;
@@ -43,7 +43,7 @@ html{
  }
 }
 
-@media(max-width:400) {
+@media(max-width:400px) {
  .button_style{
    height:300px;
    width:100px;
