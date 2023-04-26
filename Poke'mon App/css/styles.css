@@ -1,5 +1,5 @@
 
-.button_style{
+.pokemon-list{
   border-radius:20px;
   border: 0;
   font-family:pokemon_text;
@@ -11,7 +11,7 @@
   height: 600px;
   width:400px;
 }
-.button_style:hover{
+.pokemon-list:hover{
   background-color: rgb(0, 106, 255);
 }
 @font-face{
