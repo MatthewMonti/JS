@@ -40,12 +40,10 @@ function addlistitem(pokemon){
 	button.classList.add("button_style");
 	pokemon_item.appendChild(button);
 	pokemon_array.appendChild(pokemon_item);
+	pokemon_item.addEventListener('click'),function(event){
+		console.log(event);
+	}
 }
-
-let button = document.querySelector('button');
-button.addEventListener('click',function(event){
-	console.log(event);
-});
 	
 function getAll() {
 return pokemonList;
