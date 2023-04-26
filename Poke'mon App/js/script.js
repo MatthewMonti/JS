@@ -42,6 +42,12 @@ function addlistitem(pokemon){
 	pokemon_array.appendChild(pokemon_item);
 }
 
+function showDetails (pokemon) {
+button.addEventListener('click', function (event) {
+console.log(event);
+});
+
+
 function getAll() {
 return pokemonList;
 }
@@ -50,11 +56,6 @@ add:add,
 getAll:getAll,
 addlistitem: addlistitem
 };
-
-let pokemon_item= document.querySelector('button');
-pokemon_item.addEventListener('click', function (pokemon_item) {
-  console.log(pokemon_item);
-});	
 	
 })();
 
