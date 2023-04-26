@@ -36,16 +36,19 @@ let pokemonRepository= (function(){
 		let pokemon_array = document.querySelector(".pokemon-list");
 		let pokemon_item = document.createElement("li");
 		let button = document.createElement("button");
+		button.addEventListener('click', function (showDetails){
+		});
 		button.innerText = pokemon.name;
 		button.classList.add("button_style");
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
 	}
 	
-	function showDetails (pokemon) {
-		button.addEventListener('click', function (event) {
-		console.log(event);
+	function showDetails (pokemon){
+		console.log(pokemon)
 	}
+	
+
 
 
 	function getAll() {
