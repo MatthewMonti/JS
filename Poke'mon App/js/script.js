@@ -50,6 +50,12 @@ add:add,
 getAll:getAll,
 addlistitem: addlistitem
 };
+
+let button = document.querySelector('button');
+pokemon_item.addEventListener('click', function (pokemon.name) {
+  console.log(pokemon.name);
+});	
+	
 })();
 
 console.log(pokemonRepository.getAll());
@@ -58,7 +64,5 @@ pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 pokemonRepository.getAll().forEach(function (pokemon) {
 	pokemonRepository.addlistitem(pokemon);
 });
-let button = document.querySelector('button');
-button.addEventListener('click', function (event) {
-  console.log(event);
-});
+
+
