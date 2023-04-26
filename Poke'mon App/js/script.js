@@ -42,7 +42,7 @@ function addlistitem(pokemon){
 	pokemon_array.appendChild(pokemon_item);
 }
 	
-pokemon.addEventListener('click'),function(event){
+pokemonList.addEventListener('click'),function(event){
 	console.log(event);
 }
 function getAll() {
