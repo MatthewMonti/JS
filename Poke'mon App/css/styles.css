@@ -23,6 +23,10 @@
 h1{
 font-family: pokemon_text;
 color:yellow;
+text-align:center;
+}
+.pokemon-list{
+  list-style:none;
 }
 
 html{
