@@ -57,7 +57,7 @@ let pokemonRepository= (function(){
 		addlistitem: addlistitem
 	}
 	
-})();
+}();
 
 console.log(pokemonRepository.getAll());
 pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
