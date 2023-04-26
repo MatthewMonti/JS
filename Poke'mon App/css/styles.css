@@ -33,3 +33,20 @@ text-align:center;
 html{
   background-color:red;
 }
+
+@media(max-width:1000 {
+  .pokemon-list{
+    margin:0;
+    padding:0;
+  }
+}
+
+@media(max-width:500) {
+  .pokemon-list{
+    margin:0;
+    padding:0;
+  }
+ .button-style{
+   height:300px;
+   weight:100px;
+}
