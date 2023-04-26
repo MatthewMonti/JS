@@ -42,12 +42,6 @@ let pokemonRepository= (function(){
 		pokemon_array.appendChild(pokemon_item);
 	}
 
-	function showDetails (pokemon) {
-		button.addEventListener('click', function (event) {
-		console.log(event);
-	});
-
-
 	function getAll() {
 		return pokemonList;
 	}
