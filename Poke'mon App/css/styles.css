@@ -36,10 +36,6 @@ html{
 }
 
 @media(max-width:1000) {
-  .pokemon-list{
-    margin:0px;
-    padding:0px;
-  }
   .button-style{
     height:450px;
     width:300px;
@@ -48,10 +44,6 @@ html{
 }
 
 @media(max-width:400) {
-  .pokemon-list{
-    margin:0px;
-    padding:0px;
-  }
  .button-style{
    height:300px;
    width:100px;
