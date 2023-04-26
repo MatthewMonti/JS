@@ -41,10 +41,7 @@ function addlistitem(pokemon){
 	pokemon_item.appendChild(button);
 	pokemon_array.appendChild(pokemon_item);
 }
-	
-pokemonList.addEventListener('click'),function(event){
-	console.log(event);
-}
+
 function getAll() {
 return pokemonList;
 }
@@ -61,3 +58,6 @@ pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 pokemonRepository.getAll().forEach(function (pokemon) {
 	pokemonRepository.addlistitem(pokemon);
 });
+pokemonRepository.addEventListener('click'),function(event){
+	console.log(event);
+}
