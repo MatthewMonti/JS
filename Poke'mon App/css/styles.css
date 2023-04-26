@@ -8,7 +8,6 @@
   background:blue;
   color:yellow;
   cursor:pointer;
-  text-align:center;
   height: 600px;
   width:400px;
 }
@@ -33,6 +32,4 @@ html{
   background-color:red;
 }
 .container{
-  display:flex;
-  justify-content:center;
 }
