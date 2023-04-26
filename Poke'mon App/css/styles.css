@@ -36,7 +36,7 @@ html{
 }
 
 @media(max-width:1000) {
-  .button-style{
+  .button_style{
     height:450px;
     width:300px;
     margin-bottom:50px;
@@ -44,7 +44,7 @@ html{
 }
 
 @media(max-width:400) {
- .button-style{
+ .button_style{
    height:300px;
    width:100px;
    margin-bottom:25px;
