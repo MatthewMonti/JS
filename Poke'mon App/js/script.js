@@ -60,4 +60,4 @@ pokemonRepository.getAll().forEach(function (pokemon) {
 });
 function.addEventListener('click'function(event){
 	console.log(event);
-}
+});
