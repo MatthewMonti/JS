@@ -58,6 +58,6 @@ pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 pokemonRepository.getAll().forEach(function (pokemon) {
 	pokemonRepository.addlistitem(pokemon);
 });
-function.addEventListener('click'),function(event){
+function.addEventListener('click',function(event){
 	console.log(event);
 }
