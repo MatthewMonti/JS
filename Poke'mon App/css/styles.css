@@ -3,7 +3,7 @@
   border-radius:20px;
   border: 0;
   font-family:pokemon_text;
-  font-size:1.8rem;
+  font-size:2rem;
   font-weight:600;
   background:blue;
   color:yellow;
@@ -25,6 +25,7 @@ h1{
 font-family: pokemon_text;
 color:yellow;
 text-align:center;
+font-size:3rem;
 }
 .pokemon-list{
   list-style:none;
@@ -41,13 +42,19 @@ html{
     width:300px;
     margin-bottom:50px;
  }
+ h1{
+  font-size:2rem;
+ }
 }
 
 @media(max-width:400px) {
  .button_style{
    height:300px;
-   width:100px;
+   width:150px;
    margin-bottom:25px;
+}
+h1{
+  font-size:16px;
 }
 }
 
