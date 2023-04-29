@@ -25,11 +25,9 @@ let pokemonRepository= (function(){
 	}
 
 	function loadList(){
-		function showLoadingMessage()
 		return fetch(apiUrl).then(function (response) {
 			return response.json();
 		}).then (function (json) {
-			function hideLoadingMessage()
 			json.results.forEach(function (item) {
 				let pokemon = {
 					name: item.name,
@@ -39,24 +37,20 @@ let pokemonRepository= (function(){
 				console.log(pokemon);
 			});
 		}).catch(function (e) {
-				function hideLoadingMessage()
 				console.error(e);
 		});
 	}
 
 	function loadDetails(item) {
-		function showLoadingMessage()
 		let url = item.detailsUrl;
 		return fetch(url).then(function (response) {
 			return response.json();
 		}).then(function (details) {
-			function hideLoadingMessage()
 			//Now we add details to item
 			item.imageUrl = details.sprites.font_default;
 			item.height = details.height;
 			item.types = details.types;
 		}).catch(function (e) {
-			function hideLoadingMessage()
 			console.error(e);
 		});
 	}
