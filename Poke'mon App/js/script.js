@@ -4,9 +4,7 @@ let pokemonRepository= (function(){
 	function add(pokemon) {
 		if (
 			typeof pokemon === "object" &&
-			"name" in pokemon &&
-			"height" in pokemon &&
-			"types" in pokemon
+			"name" in pokemon 
 		) {
 		pokemonList.push(pokemon);
 		} else {
@@ -56,16 +54,19 @@ let pokemonRepository= (function(){
 	return {
 		add:add,
 		getAll:getAll,
-		addlistitem: addlistitem
+		addlistitem: addlistitem,
+		loadList:loadList
 	}
 	
 })();
 
-console.log(pokemonRepository.getAll());
+// console.log(pokemonRepository.getAll());
+
 pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 
-pokemonRepository.getAll().forEach(function (pokemon) {
-	pokemonRepository.addlistitem(pokemon);
+pokemonRepository.loadList().then(function() {
+	pokemonRepository.getAll().forEach(function (pokemon) {
+		pokemonRepository.addlistitem(pokemon);
+	});
 });
-
 
