@@ -25,9 +25,9 @@ let pokemonRepository= (function(){
 	}
 
 	function loadList(){
-		function showLoadingMessage();
 		return fetch(apiUrl).then(function (response) {
 			return response.json();
+			function showLoadingMessage();
 		}).then (function (json) {
 			function hideLoadingMessage()
 			json.results.forEach(function (item) {
@@ -45,10 +45,10 @@ let pokemonRepository= (function(){
 	}
 
 	function loadDetails(item) {
-		function showLoadingMessage();
 		let url = item.detailsUrl;
 		return fetch(url).then(function (response) {
 			return response.json();
+			function showLoadingMessage()
 		}).then(function (details) {
 			function hideLoadingMessage()
 			//Now we add details to item
