@@ -22,6 +22,9 @@ let pokemonRepository= (function(){
 		button.classList.add("button_style");
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
+		button.addEventListener("click", function(event) {
+			showDetails(pokemon);
+		});
 	}
 
 	function loadList(){
@@ -34,6 +37,7 @@ let pokemonRepository= (function(){
 					detailUrl: item.url
 				};
 				add(pokemon);
+				console.log(pokemon);
 			});
 		}).catch(function (e) {
 				console.error(e);
