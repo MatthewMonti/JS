@@ -50,7 +50,7 @@ let pokemonRepository= (function(){
 			return response.json();
 		}).then(function (details) {
 			//Now we add details to item
-			item.imageUrl =details.sprites.font_default;
+			item.imageUrl = details.sprites.font_default;
 			item.height = details.height;
 			item.types = details.types;
 		}).catch(function (e) {
