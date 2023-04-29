@@ -27,7 +27,7 @@ let pokemonRepository= (function(){
 	function loadList(){
 		return fetch(apiUrl).then(function (response) {
 			return response.json();
-			function showLoadingMessage();
+			function showLoadingMessage()
 		}).then (function (json) {
 			function hideLoadingMessage()
 			json.results.forEach(function (item) {
