@@ -82,7 +82,7 @@ let pokemonRepository= (function(){
 
 
 pokemonRepository.loadList().then(function() {
-	pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
+// 	pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
 	pokemonRepository.getAll().forEach(function (pokemon) {
 		pokemonRepository.addlistitem(pokemon);
 	});
