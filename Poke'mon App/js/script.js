@@ -28,8 +28,8 @@ let pokemonRepository= (function(){
 	}
 
 	function loadList(){
-		showLoadingMessage();
 		return fetch(apiUrl).then(function (response) {
+			showLoadingMessage();
 			return response.json();
 		}).then (function (json) {
 			hideLoadingMessage();
@@ -48,12 +48,12 @@ let pokemonRepository= (function(){
 	}
 
 	function loadDetails(item) {
-		showLoadingMessage();
 		let url = item.detailsUrl;
 		return fetch(url).then(function (response) {
-			hideLoadingMessage();
+			showLoadingMessage();
 			return response.json();
 		}).then(function (details) {
+			hideLoadingMessage();
 			//Now we add details to item
 			item.imageUrl = details.sprites.font_default;
 			item.height = details.height;
