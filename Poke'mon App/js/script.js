@@ -41,7 +41,7 @@ let pokemonRepository= (function(){
 			});
 		}).catch(function (e) {
 				console.error(e);
-		})
+		});
 	}
 
 	function loadDetails(item) {
@@ -55,7 +55,7 @@ let pokemonRepository= (function(){
 			item.types = details.types;
 		}).catch(function (e) {
 			console.error(e);
-		})
+		});
 	}
 
 	function showDetails(item) {
@@ -74,7 +74,7 @@ let pokemonRepository= (function(){
 		loadList:loadList,
 		loadDetails:loadDetails,
 		showDetails:showDetails
-	}	
+	};	
 })();
 
 // console.log(pokemonRepository.getAll());
