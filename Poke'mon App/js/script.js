@@ -50,13 +50,13 @@ let pokemonRepository= (function(){
 		return fetch(url).then(function (response) {
 			return response.json();
 		}).then(function (details) {
-			function hideLoadingMessage();
+			function hideLoadingMessage()
 			//Now we add details to item
 			item.imageUrl = details.sprites.font_default;
 			item.height = details.height;
 			item.types = details.types;
 		}).catch(function (e) {
-			function hideLoadingMessage();
+			function hideLoadingMessage()
 			console.error(e);
 		});
 	}
