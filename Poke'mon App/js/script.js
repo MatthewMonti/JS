@@ -25,6 +25,23 @@ let pokemonRepository= (function(){
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
 	}
+
+	function loadList(){
+		return fetch(apiUrl).then(function (response) {
+			return response.json();
+		}).then (function (json) {
+			json.results.forEach(function (item) {
+				let pokemon = {
+					name: item.name,
+					detailUrl: item.url
+				};
+				add(pokemon);
+			});
+		}).catch(function (e) {
+				console.error(e);
+		})
+	}
+
 	
 	function showDetails (pokemon){
 		console.log(pokemon)
