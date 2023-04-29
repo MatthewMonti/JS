@@ -55,7 +55,7 @@ let pokemonRepository= (function(){
 			item.types = details.types;
 		}).catch(function (e) {
 			console.error(e);
-		});
+		})
 	}
 
 	function showDetails(item) {
