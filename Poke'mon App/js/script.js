@@ -50,7 +50,7 @@
     }
   });
 
-  document.querySelector('#show-modal').addEventListener('click', () => {
+  document.querySelector('button.button_style').addEventListener('click', () => {
     showModal('Modal title', 'This is the modal content!');
   });
 
@@ -76,7 +76,6 @@ let pokemonRepository= (function(){
 		let button = document.createElement("button");
 		button.innerText = pokemon.name;
 		button.classList.add("button_style");
-		button.idlist.add('#show-modal');
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
 		button.addEventListener("click", function(event) {
