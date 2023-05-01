@@ -50,7 +50,7 @@
     }
   });
 
-  document.querySelector('.button_style').addEventListener('click', () => {
+  document.querySelector('li').addEventListener('click', () => {
     showModal('Modal title', 'This is the modal content!');
   });
 
