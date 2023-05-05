@@ -65,10 +65,6 @@ let pokemonRepository= (function(){
 		    }
 		  })
 
-		  document.getElementById('show-modal').addEventListener('click', () => {
-		    showModal('Modal title', 'This is the modal content!');
-		  });
-
 		  // THE RETURN STATEMENT HERE
 		})();
 	
@@ -85,7 +81,7 @@ let pokemonRepository= (function(){
 		pokemon_array.appendChild(pokemon_item);
 		button.classId.add('show-modal');
 		button.addEventListener("click", function(event) {
-			showDetails(pokemon);
+			showModal('Modal title', 'This is the modal content!');
 		});
 	}
 
