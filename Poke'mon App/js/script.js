@@ -63,9 +63,9 @@ let pokemonRepository= (function(){
 		    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
 		      hideModal();  
 		    }
-		  });
+		  })
 
-		  document.querySelector('#show-modal').addEventListener('click', () => {
+		  document.getElementbyId('#show-modal').addEventListener('click', () => {
 		    showModal('Modal title', 'This is the modal content!');
 		  });
 
