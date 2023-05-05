@@ -75,7 +75,7 @@ let pokemonRepository= (function(){
 		addlistitem: addlistitem,
 		loadList:loadList,
 		loadDetails:loadDetails,
-		showDetails:showDetails,
+		showDetails:showDetails
 	};	
 })();
 
