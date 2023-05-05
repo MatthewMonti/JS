@@ -65,7 +65,7 @@ let pokemonRepository= (function(){
 		    }
 		  })
 
-		  document.getElementById('#show-modal').addEventListener('click', () => {
+		  document.getElementById('show-modal').addEventListener('click', () => {
 		    showModal('Modal title', 'This is the modal content!');
 		  });
 
@@ -83,7 +83,7 @@ let pokemonRepository= (function(){
 		button.classList.add("button_style");
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
-		button.classId.add('#show-modal');
+		button.classId.add('show-modal');
 		button.addEventListener("click", function(event) {
 			showDetails(pokemon);
 		});
