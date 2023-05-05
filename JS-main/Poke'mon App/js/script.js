@@ -84,7 +84,7 @@ let pokemonRepository= (function(){
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
 		button.addEventListener("click", function(event) {
-			showDetails(pokemon);
+			showModal(pokemon);
 		});
 	}
 
@@ -134,7 +134,8 @@ let pokemonRepository= (function(){
 		addlistitem: addlistitem,
 		loadList:loadList,
 		loadDetails:loadDetails,
-		showDetails:showDetails
+		showDetails:showDetails,
+		showModal:showModal,
 	};	
 })();
 
