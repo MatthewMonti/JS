@@ -66,7 +66,7 @@ let pokemonRepository= (function(){
 		  })
 
 		  document.getElementById('#show-modal')
-	         	li.addEventListener('click', () => {
+	         #show-modal.addEventListener('click', () => {
 		    showModal('Modal title', 'This is the modal content!');
 		  });
 
