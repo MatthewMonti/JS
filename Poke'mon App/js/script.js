@@ -82,7 +82,6 @@ let pokemonRepository= (function(){
 		button.classList.add("button_style");
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
-		});
 	}
 
 	function loadList(){
