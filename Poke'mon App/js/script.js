@@ -80,7 +80,7 @@ let pokemonRepository= (function(){
 		pokemon_item.appendChild(button);
 		pokemon_array.appendChild(pokemon_item);
 		button.addEventListener("click", function(event) {
-			showModal('Modal title', 'This is the modal content!');
+			showModal(pokemon);
 		});
 	}
 
