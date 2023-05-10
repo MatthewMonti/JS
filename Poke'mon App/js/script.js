@@ -64,6 +64,16 @@ let pokemonRepository= (function(){
 	function getAll() {
 		return pokemonList;
 	}
+	
+	
+	function showModal() {
+	  let modalContainer = document.querySelector('#modal-container');
+	  modalContainer.classList.add('is-visible');
+	}
+	document.querySelector('#show-modal').addEventListener('click', () => {
+	  showModal();
+	});
+
 	return {
 		add:add,
 		getAll:getAll,
