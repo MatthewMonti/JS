@@ -55,6 +55,143 @@ let pokemonRepository= (function(){
 		});
 	}
 
+	//CREATED PARAMETERS FOR SHOW MODEL SHOW TITLE AND INFO SHOW ONLY WHEN MODAL CONTAINER SHOWN
+
+	(function() {
+
+		let modalContainer = document.querySelector('#modal-container');
+	
+		function showModal(title, text) {
+		// Clear all existing modal content
+		modalContainer.innerHTML = '';
+		let modal = document.createElement('div');
+		modal.classList.add('modal');
+	
+		// Add the new modal content
+		let closeButtonElement = document.createElement('button');
+		closeButtonElement.classList.add('modal-close');
+	
+		closeButtonElement.innerText = 'Close';
+	
+		//ADD EVENTLISTNER TO CLOSE BUTTON
+		closeButtonElement.addEventListener('click', hideModal);
+	
+		let titleElement = document.createElement('h1');
+		titleElement.innerText = title;
+	
+		let contentElement = document.createElement('p');
+		contentElement.innerText = text;
+	
+		modal.appendChild(closeButtonElement);
+		modal.appendChild(titleElement);
+		modal.appendChild(contentElement);
+		modalContainer.appendChild(modal);
+	
+		modalContainer.classList.add('is-visible');
+	
+		// Return a promise that resolves when confirmed, else rejects
+		return new Promise((resolve, reject) => {
+		cancelButton.addEventListener('click', () => {
+			hideModal();
+			reject();
+		});
+		confirmButton.addEventListener('click', () => {
+			hideModal();
+			resolve();
+		})
+		});
+	}
+	
+		//close button event listener MODAL CLASS
+		document.querySelector('#show-modal').addEventListener('click', () => {
+		showModal('Modal title', 'This is the modal content!');
+		});
+	
+		//EVENT LISTNER ESC
+		window.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+			hideModal();
+		}
+		});
+	
+		//EVENT LISTENER CLICK OUTSIDE MODAL CLOSES MODAL
+		modalContainer.addEventListener('click', (e) => {
+		// Since this is also triggered when clicking INSIDE the modal
+		// We only want to close if the user clicks directly on the overlay
+		let target = e.target;
+		if (target === modalContainer) {
+			hideModal();
+		}
+		});
+	
+		let dialogPromiseReject;
+		//This can be set later, by the showDialog
+		
+		function hideModal() {
+		let modalContainer = document.querySelector('#modal-container');
+		modalContainer.classList.remove('is-visible');
+	
+		if (dialogPromiseReject) {
+			dialogPromiseReject();
+			dialogPromiseReject = null;
+		}
+		}
+	
+	
+		function showDialog(title, text) {
+		showModal(title, text);
+	
+		// We have defined modalContainer here
+		let modalContainer = document.querySelector('#modal-container');
+	
+		// We want to add a confirm and cancel button to the modal
+		let modal = modalContainer.querySelector('.modal');
+	
+		let confirmButton = document.createElement('button');
+		confirmButton.classList.add('modal-confirm');
+		confirmButton.innerText = 'Confirm';
+	
+		let cancelButton = document.createElement('button');
+		cancelButton.classList.add('modal-cancel');
+		cancelButton.innerText = 'Cancel';
+	
+		modal.appendChild(confirmButton);
+		modal.appendChild(cancelButton);
+	
+		// We want to focus the confirmButton so that the user can simply press Enter
+		confirmButton.focus();
+
+		//PROMISE UPDATED FOR REJECT WHEN CLOSED
+		return new Promise((resolve, reject) => {
+		cancelButton.addEventListener('click', hideModal);
+		confirmButton.addEventListener('click', () => {
+		dialogPromiseReject = null; // Reset this
+		hideModal();
+		resolve();
+		});
+	
+		// This can be used to reject from other functions
+		dialogPromiseReject = reject;
+	});
+	}
+	
+		//DIALOG EVENT LISTENER
+		document.querySelector('#show-dialog').addEventListener('click', () => {
+		showDialog('Confirm action', 'Are you sure you want to do this?');
+		});
+	
+	//DIALOG CONFIRM/REJECT MESSAGE
+	document.querySelector('#show-dialog').addEventListener('click', () => {
+		showDialog('Confirm action', 'Are you sure you want to do this?').then(function() {
+		alert('confirmed!');
+		}, () => {
+		alert('not confirmed');
+		});
+	});  
+
+	//THE RETURN STATEMENT HERE
+	})();
+
 	function showDetails(item) {
 		loadDetails(item).then(function () {
 			console.log(item);
@@ -85,139 +222,3 @@ pokemonRepository.loadList().then(function() {
 		});
 	});
 
-//CREATED PARAMETERS FOR SHOW MODEL SHOW TITLE AND INFO SHOW ONLY WHEN MODAL CONTAINER SHOWN
-
-(function() {
-
-	let modalContainer = document.querySelector('#modal-container');
-  
-	function showModal(title, text) {
-	  // Clear all existing modal content
-	  modalContainer.innerHTML = '';
-	  let modal = document.createElement('div');
-	  modal.classList.add('modal');
-  
-	  // Add the new modal content
-	  let closeButtonElement = document.createElement('button');
-	  closeButtonElement.classList.add('modal-close');
-  
-	  closeButtonElement.innerText = 'Close';
-  
-	  //ADD EVENTLISTNER TO CLOSE BUTTON
-	  closeButtonElement.addEventListener('click', hideModal);
-  
-	  let titleElement = document.createElement('h1');
-	  titleElement.innerText = title;
-  
-	  let contentElement = document.createElement('p');
-	  contentElement.innerText = text;
-  
-	  modal.appendChild(closeButtonElement);
-	  modal.appendChild(titleElement);
-	  modal.appendChild(contentElement);
-	  modalContainer.appendChild(modal);
-  
-	  modalContainer.classList.add('is-visible');
-  
-	// Return a promise that resolves when confirmed, else rejects
-	return new Promise((resolve, reject) => {
-	  cancelButton.addEventListener('click', () => {
-		hideModal();
-		reject();
-	  });
-	  confirmButton.addEventListener('click', () => {
-		hideModal();
-		resolve();
-	  })
-	});
-  }
-  
-	//close button event listener MODAL CLASS
-	document.querySelector('#show-modal').addEventListener('click', () => {
-	  showModal('Modal title', 'This is the modal content!');
-	});
-  
-	//EVENT LISTNER ESC
-	window.addEventListener('keydown', (e) => {
-	  if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-		hideModal();
-	  }
-	});
-  
-	//EVENT LISTENER CLICK OUTSIDE MODAL CLOSES MODAL
-	modalContainer.addEventListener('click', (e) => {
-	  // Since this is also triggered when clicking INSIDE the modal
-	  // We only want to close if the user clicks directly on the overlay
-	  let target = e.target;
-	  if (target === modalContainer) {
-		hideModal();
-	  }
-	});
-  
-	let dialogPromiseReject;
-	//This can be set later, by the showDialog
-	
-	function hideModal() {
-	  let modalContainer = document.querySelector('#modal-container');
-	  modalContainer.classList.remove('is-visible');
-  
-	  if (dialogPromiseReject) {
-		dialogPromiseReject();
-		dialogPromiseReject = null;
-	  }
-	}
-  
-  
-	function showDialog(title, text) {
-	  showModal(title, text);
-  
-	  // We have defined modalContainer here
-	  let modalContainer = document.querySelector('#modal-container');
-  
-	  // We want to add a confirm and cancel button to the modal
-	  let modal = modalContainer.querySelector('.modal');
-  
-	  let confirmButton = document.createElement('button');
-	  confirmButton.classList.add('modal-confirm');
-	  confirmButton.innerText = 'Confirm';
-  
-	  let cancelButton = document.createElement('button');
-	  cancelButton.classList.add('modal-cancel');
-	  cancelButton.innerText = 'Cancel';
-  
-	  modal.appendChild(confirmButton);
-	  modal.appendChild(cancelButton);
-  
-	  // We want to focus the confirmButton so that the user can simply press Enter
-	  confirmButton.focus();
-
-	//PROMISE UPDATED FOR REJECT WHEN CLOSED
-	return new Promise((resolve, reject) => {
-	cancelButton.addEventListener('click', hideModal);
-	confirmButton.addEventListener('click', () => {
-	  dialogPromiseReject = null; // Reset this
-	  hideModal();
-	  resolve();
-	});
-  
-	// This can be used to reject from other functions
-	dialogPromiseReject = reject;
-  });
-  }
-  
-	//DIALOG EVENT LISTENER
-	document.querySelector('#show-dialog').addEventListener('click', () => {
-	  showDialog('Confirm action', 'Are you sure you want to do this?');
-	});
-  
-  //DIALOG CONFIRM/REJECT MESSAGE
-  document.querySelector('#show-dialog').addEventListener('click', () => {
-	showDialog('Confirm action', 'Are you sure you want to do this?').then(function() {
-	  alert('confirmed!');
-	}, () => {
-	  alert('not confirmed');
-	});
-  });  
-
-//THE RETURN STATEMENT HERE
-})();
