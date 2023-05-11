@@ -74,6 +74,16 @@ let pokemonRepository= (function(){
 		loadDetails:loadDetails,
 		showDetails:showDetails
 	};	
+})();
+
+//console.log(pokemonRepository.getAll());
+
+pokemonRepository.loadList().then(function() {
+	// 	pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
+		pokemonRepository.getAll().forEach(function (pokemon) {
+			pokemonRepository.addlistitem(pokemon);
+		});
+	});
 
 //CREATED PARAMETERS FOR SHOW MODEL SHOW TITLE AND INFO SHOW ONLY WHEN MODAL CONTAINER SHOWN
 
@@ -208,16 +218,6 @@ let pokemonRepository= (function(){
 	  alert('not confirmed');
 	});
   });  
+
+//THE RETURN STATEMENT HERE
 })();
-
-// console.log(pokemonRepository.getAll());
-
-
-
-pokemonRepository.loadList().then(function() {
-// 	pokemonRepository.add({name: "Mewtwo", height: "79" , types: ["Psychic"] });
-	pokemonRepository.getAll().forEach(function (pokemon) {
-		pokemonRepository.addlistitem(pokemon);
-	});
-});
-
