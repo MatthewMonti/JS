@@ -57,7 +57,8 @@ let pokemonRepository= (function(){
 
 	function showDetails(item) {
 		loadDetails(item).then(function () {
-			modalContainer(item);
+			console.log(item);
+			showModal.log(item);
 		});
 	}
 
@@ -207,8 +208,6 @@ let pokemonRepository= (function(){
 	  alert('not confirmed');
 	});
   });  
-
-//THE RETURN STATEMENT HERE
 })();
 
 // console.log(pokemonRepository.getAll());
@@ -221,4 +220,4 @@ pokemonRepository.loadList().then(function() {
 		pokemonRepository.addlistitem(pokemon);
 	});
 });
-})();
+
