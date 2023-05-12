@@ -56,6 +56,8 @@ let pokemonRepository= (function(){
 		});
 	}
 
+})();
+
 	//CREATED PARAMETERS FOR SHOW MODEL SHOW TITLE AND INFO SHOW ONLY WHEN MODAL CONTAINER SHOWN
 
 	(function() {
@@ -103,7 +105,7 @@ let pokemonRepository= (function(){
 		});
 	}
 	
-		//EVENT LISTENER BUTTON TO OPEN MODAL
+		//EVENT LISTENER BUTTON TO OPEN MODAL...
 		document.querySelector('#show-modal').addEventListener('click', () => {
 			showModal('Modal title', 'This is the modal content!');
 		  });
@@ -138,8 +140,6 @@ let pokemonRepository= (function(){
 		}
 		}
 
-	//THE RETURN STATEMENT HERE
-	})();
 
 	function showDetails(item) {
 		loadDetails(item).then(function () {
@@ -170,4 +170,3 @@ pokemonRepository.loadList().then(function() {
 			pokemonRepository.addlistitem(pokemon);
 		});
 	});
-
