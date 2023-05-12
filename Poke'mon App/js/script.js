@@ -149,11 +149,6 @@ let pokemonRepository= (function(){
 				});
 			});
 
-	
-		//THE RETURN STATEMENT HERE
-	})();
-
-
 	function showDetails(item) {
 		loadDetails(item).then(function () {
 			console.log(item);
@@ -173,6 +168,7 @@ let pokemonRepository= (function(){
 		loadDetails:loadDetails,
 		showDetails:showDetails
 	};	
+})();
 
 //console.log(pokemonRepository.getAll());
 
