@@ -104,9 +104,9 @@ let pokemonRepository= (function(){
 	}
 	
 		//EVENT LISTENER CLOSE BUTTON
-		document.querySelector('#show-modal').addEventListener('click', () => {
+		document.querySelector(#show-modal.addEventListener('click', () => {
 		showModal('Modal title', 'This is the modal content!');
-		});
+		}));
 	
 		//EVENT LISTENER ESC
 		window.addEventListener('keydown', (e) => {
