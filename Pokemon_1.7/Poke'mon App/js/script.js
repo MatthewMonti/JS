@@ -18,7 +18,7 @@ let pokemonRepository= (function(){
 		button.innerText = pokemon.name;
 		button.classList.add("button_style");
 		button.classList.add("show-modal");
-		let container = document.createElement("container");
+		let container = document.querySelector("div")
 		container.classList.add("modal-container");
 
 		pokemon_item.appendChild(button);
