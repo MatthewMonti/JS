@@ -77,9 +77,10 @@ let pokemonRepository= (function(){
 		loadDetails:loadDetails,
 		showDetails:showDetails
 	};	
+})();
 
+(function() {
 let modalContainer = document.querySelector('.modal-container');
-  let dialogPromiseReject; // This can be set later, by showDialog
   
   function showModal(title, text) {
     // Clear all existing modal content
@@ -116,11 +117,9 @@ let modalContainer = document.querySelector('.modal-container');
       dialogPromiseRejct = null;
     }
   }
-
 })();
 
 // console.log(pokemonRepository.getAll());
-
 
 
 pokemonRepository.loadList().then(function() {
