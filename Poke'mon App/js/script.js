@@ -217,9 +217,6 @@ let pokemonRepository= (function(){
 		hideModal();
 	  }
 	});
-  
-	let dialogPromiseReject;
-	//This can be set later, by the showDialog
 	
 	function hideModal() {
 	  let modalContainer = document.querySelector('#modal-container');
