@@ -84,7 +84,7 @@ html{
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: #fff;
+  background: red;
   padding: 15px;
   width: 100%;
   max-width: 700px;
@@ -95,14 +95,17 @@ html{
   float: right;
   border: 0;
   background: none;
-  color: #777;
+  color: blue;
   text-decoration: underline;
+  font-family:pokemon_text;
 }
 
 .modal h1 {
   margin-top: 0;
+  font-family:pokemon_text;
 }
 
 .modal p {
   margin-bottom: 0;
+  font-family:pokemon_text;
 }
