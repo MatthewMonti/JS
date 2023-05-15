@@ -84,7 +84,7 @@ html{
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: yellow;
+  background: rgb(229, 214, 0);
   padding: 15px;
   width: 100%;
   max-width: 700px;
