@@ -5,8 +5,8 @@
   font-family:pokemon_text;
   font-size:2rem;
   font-weight:600;
-  background:blue;
-  color:yellow;
+  background:#833ab4;
+  color:#fcb045;
   cursor:pointer;
   height: 600px;
   width:400px;
@@ -33,7 +33,7 @@ font-size:3rem;
 }
 
 html{
-  background-color:red;
+  background-color:#fd1d1d;
 }
 
 @media(max-width:1000px) {
@@ -84,7 +84,7 @@ html{
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: rgb(229, 214, 0);
+  background: rgb(#fcb045);
   padding: 15px;
   width: 100%;
   max-width: 700px;
