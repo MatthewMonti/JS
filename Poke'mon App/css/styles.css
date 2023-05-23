@@ -46,7 +46,9 @@ html{
     height: 300px;
     width:200px;
     margin-bottom:50px;
-    margin:auto;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-top:50px;
  }
  h1{
   font-size:3rem;
@@ -54,22 +56,26 @@ html{
   .pokemon-list{
     list-style:none;
     text-align:center;
-    column-count:4;
+    column-count:3;
  }
  }
 
 @media(max-width:400px) {
  .button_style{
-   height:300px;
-   width:150px;
+   height:150px;
+   width:100px;
    margin-bottom:25px;
    font-size:1rem;
    margin:auto;
+   margin-bottom:25px;
+   margin-left: 25px;
+   margin-right:25px;
+   margin-top:25px;
 }
  .pokemon-list{
     list-style:none;
     text-align:center;
-    column-count:4;
+    column-count:1;
  }
 #modal-container {
   display: none;
