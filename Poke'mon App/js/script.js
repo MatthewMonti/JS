@@ -57,7 +57,7 @@ let pokemonRespository = (function () {
     }
 
     function showModal(title, text, img) {
-        let modalContainer = document.querySelector('#modal-container');
+        let modalContainer = document.querySelector('.modal fade is-visible');
     
         modalContainer.innerHTML = '';
 
@@ -66,7 +66,7 @@ let pokemonRespository = (function () {
 
         //add new buttons
         let closeButtonElement = document.createElement('button');
-        closeButtonElement.classList.add('modal-close');
+        closeButtonElement.classList.add('close');
         closeButtonElement.innerText = 'Close'
         closeButtonElement,addEventListener('click', hideModal);
 
@@ -100,12 +100,12 @@ let pokemonRespository = (function () {
         }
 
     function hideModal() {
-        let modalContainer = document.querySelector('#modal-container');
+        let modalContainer = document.querySelector('.modal fade');
         modalContainer.classList.remove('is-visible');
 
     }
     window.addEventListener('keydown', (e) => {
-        let modalContainer = document.querySelector('#modal-container');
+        let modalContainer = document.querySelector('.modal fade');
         if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
             hideModal();
         }
