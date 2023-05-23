@@ -43,15 +43,20 @@ html{
 
 @media(max-width:1000px) {
   .button_style{
-    height:450px;
-    width:300px;
+    height: 300px;
+    width:200px;
     margin-bottom:50px;
     margin:auto;
  }
  h1{
   font-size:3rem;
  }
-}
+  .pokemon-list{
+    list-style:none;
+    text-align:center;
+    column-count:4;
+ }
+ }
 
 @media(max-width:400px) {
  .button_style{
@@ -61,9 +66,14 @@ html{
    font-size:1rem;
    margin:auto;
 }
-}
+ .pokemon-list{
+    list-style:none;
+    text-align:center;
+    column-count:4;
+ }
 #modal-container {
   display: none;
+}
 }
 
 #modal-container.is-visible {
