@@ -1,6 +1,7 @@
 let pokemonRespository = (function () {
     let pokemonList = [];
     let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+    let sorted_apiUrl = apiUrl.sort();
 
     let addPokemonEventListener = function (element, pokemon) {
         element.addEventListener("click", () => showDetails(pokemon));
@@ -27,7 +28,7 @@ let pokemonRespository = (function () {
         });
     }
     function loadList() {
-        return fetch(apiUrl).then(function (response) {
+        return fetch(sorted_apiUrl).then(function (response) {
             return response.json();            
         }) .then (function (json){
             json.results.forEach(function(item){
