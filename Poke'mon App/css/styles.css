@@ -6,7 +6,7 @@
   font-size:2rem;
   font-weight:600;
   background:purple;
-  color:yellow;
+  color:rgb(213, 213, 13);
   cursor:pointer;
   height: 600px;
   width:400px;
@@ -23,7 +23,7 @@
 
 h1{
 font-family: pokemon_text;
-color:yellow;
+color:rgb(213, 213, 13);
 text-align:center;
 font-size:3rem;
 }
@@ -85,7 +85,7 @@ html{
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: yellow;
+  background: rgb(213, 213, 13);
   padding: 15px;
   width: 100%;
   max-width: 700px;
