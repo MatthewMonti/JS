@@ -17,6 +17,18 @@ let pokemonRespository = (function () {
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("button_style");
+     
+        toggle.onclick = function() {
+        if (!isHover) {
+            button.classList.add('hover');
+        } else {
+            button.classList.remove('hover');
+        }
+        isHover = !isHover;
+        };
+        
+        
+        
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
