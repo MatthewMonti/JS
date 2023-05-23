@@ -31,7 +31,7 @@ let pokemonRespository = (function () {
         });
     }
     function loadList() {
-        return fetch(sorted_apiUrl).then(function (response) {
+        return fetch(apiUrl).then(function (response) {
             return response.json();            
         }) .then (function (json){
             json.results.forEach(function(item){
