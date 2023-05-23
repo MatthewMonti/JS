@@ -14,7 +14,7 @@
   text-align:center;
 }
 .button_style:hover{
-  background-color: rgb(199, 0, 199);
+  background-color: rgb(154, 0, 154);
 }
 @font-face{
   font-family: pokemon_text;
