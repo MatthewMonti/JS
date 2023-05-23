@@ -46,6 +46,10 @@ html{
  h1{
   font-size:3rem;
  }
+  
+ .pokemon-list{
+   column-count: 3;
+}
 }
 
 @media(max-width:400px) {
@@ -55,6 +59,8 @@ html{
    margin-bottom:25px;
    font-size:1rem;
 }
+  .pokemon-list{
+    column-count:1;
 }
 #modal-container {
   display: none;
