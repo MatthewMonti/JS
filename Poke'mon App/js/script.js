@@ -4,10 +4,6 @@ let pokemonRespository = (function () {
 
     let addPokemonEventListener = function (element, pokemon) {
         element.addEventListener("click", () => showDetails(pokemon));
-    for(let i in json.pokemon) {
-    values.push(json.pokemon[i]);
-    }
-    let str = values.sort().join('\n');
     };
     function add(pokemon) {
         pokemonList.push(pokemon);
