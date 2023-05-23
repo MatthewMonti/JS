@@ -17,18 +17,6 @@ let pokemonRespository = (function () {
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("button_style");
-     
-        toggle.onclick = function() {
-        if (!isHover) {
-            button.classList.add('hover');
-        } else {
-            button.classList.remove('hover');
-        }
-        isHover = !isHover;
-        };
-        
-        
-        
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
@@ -80,6 +68,7 @@ let pokemonRespository = (function () {
         let closeButtonElement = document.createElement('button');
         closeButtonElement.classList.add('modal-close');
         closeButtonElement.innerText = 'Close'
+        closeButtonElement.style.textDecloration = "underline";
         closeButtonElement,addEventListener('click', hideModal);
 
         //H1 element created for title

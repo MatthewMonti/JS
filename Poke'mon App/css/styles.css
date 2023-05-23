@@ -98,6 +98,7 @@ html{
   background: none;
   color: black;
   font-family:pokemon_text;
+  cursor:pointer;
 }
 
 .modal h1 {
