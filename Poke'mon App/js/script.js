@@ -68,7 +68,7 @@ let pokemonRespository = (function () {
         let closeButtonElement = document.createElement('button');
         closeButtonElement.classList.add('modal-close');
         closeButtonElement.innerText = 'Close'
-        closeButtonElement= ".style.textDecloration = 'underline';"
+        closeButtonElement= "this.style.textDecloration = 'underline';"
         closeButtonElement,addEventListener('click', hideModal);
 
         //H1 element created for title
