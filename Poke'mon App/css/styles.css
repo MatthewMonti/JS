@@ -88,7 +88,7 @@ html{
   text-align: left;
 }
 
-.modal-close {
+.btn-secondary {
   float: right;
   border: 0;
   background: none;
@@ -97,17 +97,17 @@ html{
   cursor:pointer;
 }
 
-.modal-close:hover {
+.btn-secondary:hover {
   text-decoration: underline;
 }
 
-.modal h1 {
+.modal-title h5 {
   margin-top: 0;
   font-family:pokemon_text;
   color:black;
 }
 
-.modal p {
+.modal-body p {
   margin-bottom: 0;
   font-family:pokemon_text;
   color:black
