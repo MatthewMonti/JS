@@ -5,8 +5,8 @@
   font-family:pokemon_text;
   font-size:2rem;
   font-weight:600;
-  background:#833ab4;
-  color:#fcb045;
+  background:purple;
+  color:yellow;
   cursor:pointer;
   height: 600px;
   width:400px;
@@ -14,7 +14,7 @@
   text-align:center;
 }
 .button_style:hover{
-  background-color: #ab6ed3;
+  background-color: #c170f8;
 }
 @font-face{
   font-family: pokemon_text;
@@ -23,7 +23,7 @@
 
 h1{
 font-family: pokemon_text;
-color:#fcb045;
+color:yellow;
 text-align:center;
 font-size:3rem;
 }
@@ -85,7 +85,7 @@ html{
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: #fcb045;
+  background: yellow;
   padding: 15px;
   width: 100%;
   max-width: 700px;
