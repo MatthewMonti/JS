@@ -1,5 +1,5 @@
 
-.button_style{
+.btn-primary {
   border-radius:20px;
   border: 0;
   font-family:pokemon_text;
@@ -13,7 +13,7 @@
   margin-bottom:100px;
   text-align:center;
 }
-.button_style:hover{
+.btn-primary:hover{
   background-color: rgb(154, 0, 154);
 }
 @font-face{
@@ -38,10 +38,8 @@ html{
 }
 
 @media(max-width:1000px) {
-  .button_style{
-    height:450px;
-    width:300px;
-    margin-bottom:50px;
+  .btn-primary{
+   column-count:4;
  }
  h1{
   font-size:3rem;
@@ -49,11 +47,8 @@ html{
 }
 
 @media(max-width:400px) {
- .button_style{
-   height:300px;
-   width:150px;
-   margin-bottom:25px;
-   font-size:1rem;
+ .btn-primary{
+   column-count:1;
 }
 }
 #modal-container {
