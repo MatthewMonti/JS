@@ -57,7 +57,7 @@ let pokemonRespository = (function () {
     }
 
     function showModal(title, text, img) {
-        let modalContainer = document.querySelector('.modal fade is-visible');
+        let modalContainer = document.querySelector('#modal-container');
     
         modalContainer.innerHTML = '';
 
