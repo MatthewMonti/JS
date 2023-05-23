@@ -101,6 +101,10 @@ html{
   cursor:pointer;
 }
 
+.modal-close:hover {
+  text-decoration: underline;
+}
+
 .modal h1 {
   margin-top: 0;
   font-family:pokemon_text;
