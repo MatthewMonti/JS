@@ -23,7 +23,7 @@
 .btn-primary:hover{
   background-color: rgb(154, 0, 154);
 }
-.font-face{
+@font-face{
   font-family: pokemon_text;
   src:url(Pokemon_Solid.ttf);
 }
