@@ -19,11 +19,12 @@
   src:url(Pokemon_Solid.ttf);
 }
 
-h5{
+h1{
 font-family: pokemon_text;
 color:rgb(213, 213, 13);
 text-align:center;
 font-size:3rem;
+background-color:#db3f3f;
 }
 .pokemon-list{
   list-style:none;
@@ -79,7 +80,7 @@ font-size:3rem;
   color:red;
 }
 
-.btn-secondary h1 {
+.btn-secondary h5 {
   margin-top: 0;
   font-family:pokemon_text;
   color:black;
