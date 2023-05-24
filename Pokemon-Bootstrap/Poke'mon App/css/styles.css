@@ -19,7 +19,7 @@
   src:url(Pokemon_Solid.ttf);
 }
 
-h1{
+h5{
 font-family: pokemon_text;
 color:rgb(213, 213, 13);
 text-align:center;
@@ -28,9 +28,6 @@ font-size:3rem;
 .pokemon-list{
   list-style:none;
   text-align:center;
-}
-
-html{
   background-color:#db3f3f;
 }
 
