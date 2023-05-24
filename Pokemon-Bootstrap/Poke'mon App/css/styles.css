@@ -10,12 +10,6 @@
   cursor:pointer;
   height: 300px;
   width:200px;
-  margin-bottom:50px;
-  margin-left: 50px;
-  margin-right:50px;
-  margin-top:50px;
-  
-  text-align:center;
 }
 .button_style:hover{
   background-color: rgb(154, 0, 154);
@@ -58,8 +52,8 @@ html{
   overflow: auto; 
   
   /* this is used to center the modal */
-  display: grid;
-  text-align: center;
+  /* display: grid; */
+  /* text-align: center; */
 }
 
 .modal {
@@ -104,10 +98,6 @@ html{
   .button_style{
     height: 300px;
     width:200px;
-    margin-bottom:50px;
-    margin-left: 50px;
-    margin-right:50px;
-    margin-top:50px;
  }
  h1{
   font-size:3rem;
