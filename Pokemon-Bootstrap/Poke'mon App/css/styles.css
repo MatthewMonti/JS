@@ -34,7 +34,6 @@ font-size:3rem;
 .pokemon-list{
   list-style:none;
   text-align:center;
-  column-count: 6;
 }
 
 html{
