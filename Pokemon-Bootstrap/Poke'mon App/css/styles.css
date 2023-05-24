@@ -1,3 +1,11 @@
+html{
+  background-color:#db3f3f;
+}
+
+.navbar{
+  color:rgb(213, 213, 13);
+  font-family:pokemon_text;
+}
 
 .btn-primary{
   border-radius:20px;
@@ -24,12 +32,10 @@ font-family: pokemon_text;
 color:rgb(213, 213, 13);
 text-align:center;
 font-size:3rem;
-background-color:#db3f3f;
 }
 .pokemon-list{
   list-style:none;
   text-align:center;
-  background-color:#db3f3f;
 }
 
 #modal-container.is-visible {
