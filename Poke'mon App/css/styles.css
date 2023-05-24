@@ -58,6 +58,9 @@ html{
     text-align:center;
     column-count:3;
  }
+ #modal-container {
+  display: none;
+}
  }
 
 @media(max-width:400px) {
@@ -126,6 +129,7 @@ html{
 
 .modal-close:hover {
   text-decoration: underline;
+  color:red;
 }
 
 .modal h1 {
