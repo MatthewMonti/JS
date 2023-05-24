@@ -1,5 +1,5 @@
 
-.button_style{
+.btn-primary{
   border-radius:20px;
   border: 0;
   font-family:pokemon_text;
@@ -11,7 +11,7 @@
   height: 300px;
   width:200px;
 }
-.button_style:hover{
+.btn-primary:hover{
   background-color: rgb(154, 0, 154);
 }
 @font-face{
@@ -56,7 +56,7 @@ html{
   /* text-align: center; */
 }
 
-.modal {
+.btn-secondary {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
@@ -67,7 +67,7 @@ html{
   text-align: left;
 }
 
-.modal-close {
+.btn-secondary-close {
   float: right;
   border: 0;
   background: none;
@@ -77,18 +77,18 @@ html{
   font-size:20px;
 }
 
-.modal-close:hover {
+.btn-secondary-close:hover {
   text-decoration: underline;
   color:red;
 }
 
-.modal h1 {
+.btn-secondary h1 {
   margin-top: 0;
   font-family:pokemon_text;
   color:black;
 }
 
-.modal p {
+.btn-secondary p {
   margin-bottom: 0;
   font-family:pokemon_text;
   color:black;
