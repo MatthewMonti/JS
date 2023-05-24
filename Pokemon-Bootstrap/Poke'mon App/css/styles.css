@@ -115,7 +115,6 @@ html{
   .pokemon-list{
     list-style:none;
     text-align:center;
-    column-count:3;
  }
  #modal-container {
   display: none;
@@ -132,16 +131,10 @@ html{
    width:100px;
    margin-bottom:25px;
    font-size:1rem;
-   margin:auto;
-   margin-bottom:25px;
-   margin-left: 25px;
-   margin-right:25px;
-   margin-top:25px;
-}
+ }
  .pokemon-list{
     list-style:none;
     text-align:center;
-    column-count:1;
  }
 #modal-container {
   display: none;
