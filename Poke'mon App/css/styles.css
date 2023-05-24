@@ -81,6 +81,7 @@ html{
   color: black;
   font-family:pokemon_text;
   cursor:pointer;
+  font-size:20px;
 }
 
 .modal-close:hover {
