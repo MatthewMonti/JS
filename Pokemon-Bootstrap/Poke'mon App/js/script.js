@@ -14,7 +14,7 @@ let pokemonRespository = (function () {
     function addListItem(pokemon) {
         let pokemonList = document.querySelector(".pokemon-list");
         let listpokemon = document.createElement("li");
-        listpokemon.addClass("row");
+        li.classList("row");
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("button_style");
