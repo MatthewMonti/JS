@@ -1,8 +1,8 @@
-html{
+.container-fluid {
   background-color:#db3f3f;
 }
 
-nav{
+.nav-link, .navbar-brand {
   color:rgb(213, 213, 13);
   font-family:pokemon_text;
 }
@@ -19,6 +19,7 @@ nav{
   height: 300px;
   width:200px;
 }
+
 .btn-primary:hover{
   background-color: rgb(154, 0, 154);
 }
