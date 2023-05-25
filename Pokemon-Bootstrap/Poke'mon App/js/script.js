@@ -38,11 +38,15 @@ let pokemonRespository = (function () {
                 };
                 add(pokemon);
             });
-        }).catch(function (e) {
-            console.error(e);
-        })
-    }
-
+       // Sort the pokemonList alphabetically by name
+      pokemonList.sort(function(a, b) {
+        return a.name.localeCompare(b.name);
+      });
+    })
+    .catch(function(e) {
+      console.error(e);
+    });
+  
     function loadDetails(item) {
         let url = item.detailsUrl;
         return fetch(url).then(function (response){
@@ -126,3 +130,5 @@ let pokemonRespository = (function () {
             pokemonRespository.addListItem(pokemon);
         });
     });
+
+
