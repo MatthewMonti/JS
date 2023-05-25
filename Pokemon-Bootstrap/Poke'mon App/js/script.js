@@ -28,7 +28,7 @@ let pokemonRespository = (function () {
         });
     }
     function loadList() {
-  return fetch(apiUrl)
+    return fetch(apiUrl)
     .then(function(response) {
       return response.json();
     })
