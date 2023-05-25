@@ -7,7 +7,7 @@ a.navbar-brand, button.navbar-toggler, div.navbar-collapse collapse show {
   background-color: #db3f3f;
 }
 
-nav.a.navbar-brand, a.nav-link {
+nav.navbar-brand, a.nav-link {
   color: rgb(213, 213, 13);
   font-family:pokemon_text;
 }
