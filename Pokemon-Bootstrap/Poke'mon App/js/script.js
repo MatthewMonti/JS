@@ -136,7 +136,7 @@ let pokemonRespository = (function () {
         loadDetails: loadDetails,
     };
 
-}})();
+})();
     pokemonRespository.loadList().then(function(){
         pokemonRespository.getAll().forEach(function(pokemon){
             pokemonRespository.addListItem(pokemon);
