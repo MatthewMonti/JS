@@ -46,20 +46,32 @@ let pokemonRespository = (function () {
     .catch(function(e) {
       console.error(e);
     });
-  
-    function loadDetails(item) {
-        let url = item.detailsUrl;
-        return fetch(url).then(function (response){
+
+    function loadList() {
+        return fetch(apiUrl)
+          .then(function(response) {
             return response.json();
-        }).then(function (details) {
-            // details to the pokemon
-            item.imageUrl = details.sprites.front_default;
-            item.height = details.height;
-            item.types = details.types;
-        }).catch(function(e){
+          })
+          .then(function(json) {
+            json.results.forEach(function(item) {
+              let pokemon = {
+                name: item.name,
+                detailsUrl: item.url
+              };
+              add(pokemon);
+            });
+      
+            // Sort the pokemonList alphabetically by name
+            pokemonList.sort(function(a, b) {
+              return a.name.localeCompare(b.name);
+            });
+          })
+          .catch(function(e) {
             console.error(e);
-        });
-    }
+          });
+      }
+      
+  
 
     function showModal(title, text, img) {
         let modalContainer = document.querySelector('#modal-container');
@@ -124,7 +136,7 @@ let pokemonRespository = (function () {
         loadDetails: loadDetails,
     };
 
-})();
+}})();
     pokemonRespository.loadList().then(function(){
         pokemonRespository.getAll().forEach(function(pokemon){
             pokemonRespository.addListItem(pokemon);
