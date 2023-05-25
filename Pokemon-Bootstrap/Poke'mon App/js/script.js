@@ -13,11 +13,10 @@ let pokemonRespository = (function () {
     }
     function addListItem(pokemon) {
         let pokemonList = document.querySelector(".pokemon-list");
-        pokemonList.classList.add("row");
         let listpokemon = document.createElement("li");
         let button = document.createElement("button");
         button.innerText = pokemon.name;
-        button.classList.add(".btn-primary");
+        button.classList.add("button_style");
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
@@ -27,32 +26,35 @@ let pokemonRespository = (function () {
             showModal(pokemon.name, pokemon.name + ' Height is: ' + pokemon.height, pokemon.imageUrl);
         });
     }
-
     function loadList() {
-        return fetch(apiUrl)
-          .then(function(response) {
-            return response.json();
-          })
-          .then(function(json) {
-            json.results.forEach(function(item) {
-              let pokemon = {
-                name: item.name,
-                detailsUrl: item.url
-              };
-              add(pokemon);
+        return fetch(apiUrl).then(function (response) {
+            return response.json();            
+        }) .then (function (json){
+            json.results.forEach(function(item){
+                let pokemon = {
+                    name: item.name,
+                    detailsUrl: item.url
+                };
+                add(pokemon);
             });
-      
-            // Sort the pokemonList alphabetically by name
-            pokemonList.sort(function(a, b) {
-              return a.name.localeCompare(b.name);
-            });
-          })
-          .catch(function(e) {
+        }).catch(function (e) {
             console.error(e);
-          });
-      }
-      
-  
+        })
+    }
+
+    function loadDetails(item) {
+        let url = item.detailsUrl;
+        return fetch(url).then(function (response){
+            return response.json();
+        }).then(function (details) {
+            // details to the pokemon
+            item.imageUrl = details.sprites.front_default;
+            item.height = details.height;
+            item.types = details.types;
+        }).catch(function(e){
+            console.error(e);
+        });
+    }
 
     function showModal(title, text, img) {
         let modalContainer = document.querySelector('#modal-container');
@@ -123,5 +125,4 @@ let pokemonRespository = (function () {
             pokemonRespository.addListItem(pokemon);
         });
     });
-
 
