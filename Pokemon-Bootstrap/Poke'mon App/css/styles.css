@@ -9,6 +9,7 @@ a.navbar-brand, button.navbar-toggler, div.navbar-collapse collapse show {
 
 a.navbar-brand, a.nav-link {
   color: rgb(213, 213, 13);
+  font-family:pokemon_text;
 }
 
 .btn-primary{
