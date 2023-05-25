@@ -2,7 +2,7 @@ body{
   background-color:#db3f3f;
 }
 
-nav,.navbar-brand,.nav-item {
+nav,.navbar-brand,li.nav-item {
   color:rgb(213, 213, 13);
   font-family:pokemon_text;
   background-color:#db3f3f;
