@@ -19,7 +19,6 @@ let pokemonRespository = (function () {
         listpokemon.classList.add("col");
         let button = document.createElement("button");
         button.innerText = pokemon.name;
-        button.setAttribute("id","modal-container");
         button.setAttribute("datatype","button");
         button.setAtrribute("id", "pokemon_details")
         button.classList.add("btn-primary");
