@@ -12,7 +12,8 @@ let pokemonRespository = (function () {
         return pokemonList;
     }
     function addListItem(pokemon) {
-        let pokemonList = document.querySelector(".pokemon-list list-group row");
+        let pokemonList = document.querySelector(".pokemon-list list-group");
+        pokemonList.class.add("row");
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
         let button = document.createElement("button");
