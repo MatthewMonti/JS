@@ -2,6 +2,9 @@ body{
   background-color:#db3f3f;
 }
 
+ul.list-pokemon row{
+  background-color:#db3f3f;
+}
 
 nav.navbar {
   color: rgb(213, 213, 13);
