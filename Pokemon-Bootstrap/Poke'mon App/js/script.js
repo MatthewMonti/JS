@@ -20,10 +20,15 @@ let pokemonRespository = (function () {
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("btn-primary");
+        button.datatype.add("button");
+        button.data-toggle.add("modal");
+        button.id.add("modal-container");
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
     }
+
+
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function(){
             showModal(pokemon.name, pokemon.name + ' Height is: ' + pokemon.height, pokemon.imageUrl);
