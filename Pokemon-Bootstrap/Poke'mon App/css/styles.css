@@ -2,7 +2,7 @@ body{
   background-color:#db3f3f;
 }
 
-ul.list-pokemon row{
+li.list-group-item{
   background-color:#db3f3f;
 }
 
