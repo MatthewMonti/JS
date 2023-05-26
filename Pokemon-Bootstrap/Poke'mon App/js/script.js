@@ -20,7 +20,7 @@ let pokemonRespository = (function () {
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.setAttribute("datatype","button");
-        button.setAtrribute("id", "pokemon_details")
+        button.setAtrribute('id', 'pokemon_details')
         button.classList.add("btn-primary");
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
