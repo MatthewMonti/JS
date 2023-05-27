@@ -92,7 +92,7 @@ let pokemonRespository = (function () {
       });
 
       // Sort the pokemon_item alphabetically by name
-      pokemon_item.sort(function(a, b) {
+      pokemonList.sort(function(a, b) {
         return a.name.localeCompare(b.name);
       });
     })
