@@ -28,7 +28,17 @@ nav.navbar {
 }
 
 .btn-primary:hover{
+  border-radius:20px;
+  border: 0;
+  font-family:pokemon_text;
+  font-size:2rem;
+  font-weight:600;
   background-color: rgb(154, 0, 154);
+  color:rgb(213, 213, 13);
+  cursor:pointer;
+  height: 300px;
+  width:200px;
+
 }
 @font-face{
   font-family: pokemon_text;
