@@ -28,7 +28,7 @@
 h1{
 font-family: pokemon_text;
 color:rgb(213, 213, 13);
-background-color:#db3f3f;
+background-color:$red-600;
 text-align:center;
 font-size:3rem;
 }
@@ -155,6 +155,22 @@ html,ul,body,.container-fluid,li.col.list-group-item {
 
 .modal-close:hover {
   text-decoration: underline;
-  color:red;
+  color:$red-600;
 }
 }
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
