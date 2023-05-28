@@ -39,6 +39,7 @@ font-size:3rem;
 
 html,body,h1,ul,.container-fluid,li.col.list-group-item {
   background-color:#db3f3f;
+  border:none
 }
 
 
