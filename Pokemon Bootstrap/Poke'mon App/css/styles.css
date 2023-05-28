@@ -1,3 +1,10 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light,a.navbar-brand, button.navbar-toggler,
+div#navbarNav.navbar-collapse.collapse.show{
+  background-color: #db3f3f;
+  font-family: pokemon_text;
+  color:rgb(213, 213, 13);
+}
+
 
 .btn-primary{
   border-radius:20px;
