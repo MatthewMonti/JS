@@ -37,9 +37,10 @@ font-size:3rem;
   column-count: 6;
 }
 
-html{
+html,body,ul,.container-fluid{
   background-color:#db3f3f;
 }
+
 
 #modal-container.is-visible {
   position: fixed;
