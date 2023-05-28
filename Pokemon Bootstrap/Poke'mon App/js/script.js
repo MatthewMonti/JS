@@ -72,7 +72,8 @@ let pokemonRespository = (function () {
         let closeButtonElement = document.createElement('button');
         closeButtonElement.classList.add('modal-close');
         closeButtonElement.innerText = 'Close'
-        closeButtonElement,addEventListener('click', hideModal);
+        closeButtonElement.addEventListener('click', hideModal);
+        closeButtonElement.classList.add('btn-secound');
 
         //H1 element created for title
         let titleElement = document.createElement('h1');
