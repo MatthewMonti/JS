@@ -1,16 +1,16 @@
 
 a.navbar-brand{
-  color:rgb(213, 213, 13);
+  color:$yellow-500;
   font-family: pokemon_text;
 }
 
 .nav-link{
-  color:rgb(213, 213, 13);
+  color:$yellow-500;
   font-family: pokemon_text;
 }
 
 span.navbar-toggler-icon{
-  color:rgb(213, 213, 13);
+  color:$yellow-500
   font-family: pokemon_text;
   border:none;
 }
@@ -20,12 +20,12 @@ span.navbar-toggler-icon{
 }
 
 .navbar-light .navbar-brand {
-  color:rgb(213, 213, 13);
+  color:$yellow-500
   font-family: pokemon_text;
 }
 
 .navbar-light .navbar-toggler-icon{
-  color:rgb(213, 213, 13);
+  color:$yellow-500
   font-family: pokemon_text;
 }
 
@@ -42,7 +42,7 @@ body{
   font-size:2rem;
   font-weight:600;
   background:purple;
-  color:rgb(213, 213, 13);
+  color: $yellow-500
   cursor:pointer;
   height: 300px;
   width:200px;
@@ -63,7 +63,7 @@ body{
 
 h1{
 font-family: pokemon_text;
-color:rgb(213, 213, 13);
+color:$yellow-500;
 background-color:$red-600;
 text-align:center;
 font-size:3rem;
@@ -106,7 +106,7 @@ html,ul,body,.container-fluid,li.col.list-group-item {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: rgb(213, 213, 13);
+  background:$yellow-500;
   padding: 15px;
   width: 100%;
   max-width: 700px;
