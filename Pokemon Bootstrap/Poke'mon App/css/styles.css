@@ -1,13 +1,9 @@
 
-.bg-light{
-  background-color: #db3f3f;
-}
-
 a.navbar-brand{
   color:rgb(213, 213, 13);
 }
 
-a.nav-link{
+.nav-link{
   color:rgb(213, 213, 13);
 }
 
@@ -16,11 +12,17 @@ span.navbar-toggler-icon{
   border:none;
 }
 
+.navbar-light{
+  background-color: #db3f3f;
+}
 
+.navbar-light .navbar-brand {
+  color:rgb(213, 213, 13);
+}
 
-
-
-
+.navbar-light .navbar-toggler-icon{
+  color:rgb(213, 213, 13);
+}
 
 
 
