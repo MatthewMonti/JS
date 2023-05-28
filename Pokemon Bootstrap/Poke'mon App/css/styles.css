@@ -37,7 +37,7 @@ font-size:3rem;
   column-count: 6;
 }
 
-html,body,ul,.container-fluid{
+html,body,h1,ul,.container-fluid,li {
   background-color:#db3f3f;
 }
 
