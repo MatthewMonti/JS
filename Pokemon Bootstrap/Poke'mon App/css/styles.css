@@ -28,6 +28,7 @@
 h1{
 font-family: pokemon_text;
 color:rgb(213, 213, 13);
+background-color:#db3f3f;
 text-align:center;
 font-size:3rem;
 }
@@ -37,7 +38,7 @@ font-size:3rem;
   column-count: 6;
 }
 
-html,body,h1,ul,.container-fluid,li.col.list-group-item {
+html,body,ul,.container-fluid,li.col.list-group-item {
   background-color:#db3f3f;
   border:none
 }
