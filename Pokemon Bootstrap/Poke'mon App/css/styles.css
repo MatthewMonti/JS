@@ -38,7 +38,7 @@ font-size:3rem;
   column-count: 6;
 }
 
-html,body,ul,.container-fluid,li.col.list-group-item {
+html,ul,body,.container-fluid,li.col.list-group-item {
   background-color:#db3f3f;
   border:none
 }
