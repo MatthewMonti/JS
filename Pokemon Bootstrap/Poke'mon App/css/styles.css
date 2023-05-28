@@ -96,6 +96,7 @@ html,body,ul,.container-fluid,li.col.list-group-item {
   margin-top: 0;
   font-family:pokemon_text;
   color:black;
+  background-color:#db3f3f;
 }
 
 .modal p {
@@ -115,6 +116,7 @@ html,body,ul,.container-fluid,li.col.list-group-item {
  }
  h1{
   font-size:3rem;
+  background-color:#db3f3f;
  }
   .pokemon-list{
     list-style:none;
