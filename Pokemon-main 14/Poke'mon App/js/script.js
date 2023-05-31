@@ -13,8 +13,8 @@ let pokemonRespository = (function () {
     }
     function addListItem(pokemon) {
         let pokemonList = document.querySelector("pokemon-cards");
-        pokemonList.appendChild.add("list-group");
-        pokemonList.appendChild.add("row");
+        pokemonList.ul.appendChild.add("list-group");
+        pokemonList.ul.appendChild.add("row");
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
         let button = document.createElement("button");
