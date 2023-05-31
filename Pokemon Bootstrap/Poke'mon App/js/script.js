@@ -13,7 +13,10 @@ let pokemonRespository = (function () {
     }
     function addListItem(pokemon) {
         let pokemonList = document.querySelector(".pokemon-list");
+        pokemonList.classList.add("list-group");
+        pokemonList.classList.add("row");
         let listpokemon = document.createElement("li");
+        li.classList.add("col");
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("button_style");

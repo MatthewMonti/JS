@@ -34,6 +34,7 @@ font-size:3rem;
 .pokemon-list{
   list-style:none;
   text-align:center;
+  padding:20px;
   column-count: 6;
 }
 
@@ -71,7 +72,7 @@ html,body{
   padding: 15px;
   width: 100%;
   max-width: 700px;
-  text-align: left;
+  text-align: center;
 }
 
 .modal-close {
