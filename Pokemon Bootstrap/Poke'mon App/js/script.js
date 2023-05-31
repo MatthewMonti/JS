@@ -61,7 +61,7 @@ let pokemonRespository = (function () {
     }
 
     function showModal(title, text, img) {
-        let modalContainer = document.querySelector('#modal-container');
+        let modalContainer = document.querySelector('#show-modal');
     
         modalContainer.innerHTML = '';
 
@@ -104,12 +104,12 @@ let pokemonRespository = (function () {
         }
 
     function hideModal() {
-        let modalContainer = document.querySelector('#modal-container');
+        let modalContainer = document.querySelector('#show-modal');
         modalContainer.classList.remove('is-visible');
 
     }
     window.addEventListener('keydown', (e) => {
-        let modalContainer = document.querySelector('#modal-container');
+        let modalContainer = document.querySelector('#show-modal');
         if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
             hideModal();
         }
