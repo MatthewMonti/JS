@@ -12,7 +12,7 @@ let pokemonRespository = (function () {
         return pokemonList;
     }
     function addListItem(pokemon) {
-        let pokemonList = document.querySelector("#exampleModal");
+        let pokemonList = document.querySelector("pokemon-cards");
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
         let button = document.createElement("button");
