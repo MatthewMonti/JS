@@ -17,7 +17,7 @@
   
   text-align:center;
 }
-.button_style:hover{
+.btn-primary:hover{
   background-color: rgb(154, 0, 154);
 }
 @font-face{
