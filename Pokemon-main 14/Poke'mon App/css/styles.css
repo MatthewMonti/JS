@@ -1,5 +1,5 @@
 
-.button_style{
+.btn-primary{
   border-radius:20px;
   border: 0;
   font-family:pokemon_text;
@@ -17,7 +17,7 @@
   
   text-align:center;
 }
-.button_style:hover{
+.btn-primary:hover{
   background-color: rgb(154, 0, 154);
 }
 @font-face{
@@ -34,14 +34,13 @@ font-size:3rem;
 .pokemon-list{
   list-style:none;
   text-align:center;
-  column-count: 6;
 }
 
 html{
   background-color:#db3f3f;
 }
 
-#modal-container.is-visible {
+#exampleModal.is-visible {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -74,7 +73,7 @@ html{
   text-align: left;
 }
 
-.modal-close {
+.btn-secondary {
   float: right;
   border: 0;
   background: none;
@@ -118,7 +117,7 @@ html{
     text-align:center;
     column-count:3;
  }
- #modal-container {
+ #exampleModal {
   display: none;
 }
 .modal-close:hover {
@@ -144,12 +143,4 @@ html{
     text-align:center;
     column-count:1;
  }
-#modal-container {
-  display: none;
-}
-
-.modal-close:hover {
-  text-decoration: underline;
-  color:red;
-}
 }
