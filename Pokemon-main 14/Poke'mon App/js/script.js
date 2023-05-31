@@ -16,10 +16,10 @@ let pokemonRespository = (function () {
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
         let button = document.createElement("button");
+        button.classList.toggle('modal');
         button.innerText = pokemon.name;
         button.classList.add("btn-primary");
         listpokemon.appendChild(button);
-        button.setAttribute(data-toggle, "modal");
         pokemonList.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
     }
