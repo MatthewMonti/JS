@@ -75,7 +75,7 @@ html,body,li.col.list-group-item{
   text-align: center;
 }
 
-.modal-close {
+.button-secondary {
   float: right;
   border: 0;
   background: none;
@@ -85,7 +85,7 @@ html,body,li.col.list-group-item{
   font-size:20px;
 }
 
-.modal-close:hover {
+.modal-secondary:hover {
   text-decoration: underline;
   color:red;
 }
