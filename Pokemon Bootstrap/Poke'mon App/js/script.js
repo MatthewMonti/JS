@@ -76,12 +76,12 @@ let pokemonRespository = (function () {
         closeButtonElement.innerText = 'Close'
         closeButtonElement,addEventListener('click', hideModal);
 
-        //H1 element created for title
-        let titleElement = document.createElement('h1');
+        //H5 select the pokemon name
+        let titleElement = document.querySelector('h5');
         titleElement.innerText = title;
 
         //P element created for body
-        let contentElement = document.createElement('p');
+        let contentElement = document.querySelector('p');
         contentElement.innerText = text;
 
         //image element created for pokemon img
