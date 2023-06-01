@@ -77,7 +77,7 @@ let pokemonRespository = (function () {
         closeButtonElement.addEventListener('click', hideModal);
 
         //H5 select the pokemon name
-        let titleElement = document.querySelector('h5');
+        let titleElement = document.querySelector('.modal-title');
         titleElement.innerText = title;
 
         //P element created for body
