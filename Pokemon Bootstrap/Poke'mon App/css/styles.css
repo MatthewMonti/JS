@@ -42,7 +42,7 @@ html,body,li.col.list-group-item{
   background-color:#db3f3f;
 }
 
-#modal-container.is-visible {
+.modal.is-visible {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -75,7 +75,7 @@ html,body,li.col.list-group-item{
   text-align: center;
 }
 
-.button-secondary {
+.btn-secondary {
   float: right;
   border: 0;
   background: none;
@@ -85,7 +85,7 @@ html,body,li.col.list-group-item{
   font-size:20px;
 }
 
-.modal-secondary:hover {
+.btn-secondary:hover {
   text-decoration: underline;
   color:red;
 }
