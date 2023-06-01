@@ -102,6 +102,10 @@ html,body,li.col.list-group-item{
   color:black;
 }
 
-
+imageUrl{
+  width:204.48px;
+  height:128.64px;
+  /* 2.13 inches wide and 1.34 inches tall */
+}
 
 
