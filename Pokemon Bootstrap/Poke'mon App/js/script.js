@@ -106,12 +106,12 @@ let pokemonRespository = (function () {
         }
 
     function hideModal() {
-        let modalContainer = document.querySelector('.modal-dialog');
+        let modalContainer = document.querySelector('.modal');
         modalContainer.classList.remove('is-visible');
 
     }
     window.addEventListener('keydown', (e) => {
-        let modalContainer = document.querySelector('.modal-dialog');
+        let modalContainer = document.querySelector('.modal');
         if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
             hideModal();
         }
