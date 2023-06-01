@@ -72,7 +72,7 @@ let pokemonRespository = (function () {
 
         //add new buttons
         let closeButtonElement = document.createElement('button');
-        closeButtonElement.classList.add('modal-close');
+        closeButtonElement.classList.add('btn-secondary');
         closeButtonElement.innerText = 'Close'
         closeButtonElement,addEventListener('click', hideModal);
 
