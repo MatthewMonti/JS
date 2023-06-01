@@ -22,7 +22,7 @@ let pokemonRespository = (function () {
         button.innerText = pokemon.name;
         button.classList.add("btn-primary");
         button.classList.toggle("modal");
-        button.append(data-target,"#exampleModal");
+        button.setAttribute(id,"exampleModal");
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
