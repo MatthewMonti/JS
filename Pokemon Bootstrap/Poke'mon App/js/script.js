@@ -19,7 +19,7 @@ let pokemonRespository = (function () {
         button.classList.add("btn-primary");
         listpokemon.appendChild(button);
         listElement.appendChild(listpokemon);
-        addPokemonEventListener(button, pokemon);
+        add-PokemonEventListener(button, pokemon);
     }
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function(){
