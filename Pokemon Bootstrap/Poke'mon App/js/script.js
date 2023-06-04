@@ -12,13 +12,13 @@ let pokemonRespository = (function () {
         return pokemonList;
     }
     function addListItem(pokemon) {
-        let pokemonList = document.querySelector(".pokemon-list");
+        let listElement = document.querySelector(".pokemon-list");
         let listpokemon = document.createElement("li");
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("btn-primary");
         listpokemon.appendChild(button);
-        pokemonList.appendChild(listpokemon);
+        listElement.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
     }
     function showDetails(pokemon) {
