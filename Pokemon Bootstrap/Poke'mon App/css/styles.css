@@ -30,6 +30,14 @@ span.navbar-toggler-icon{
   color:rgb(213, 213, 13)!important;
 }
 
+.navbar-toggler{
+  color:rgb(213, 213, 13)!important;
+}
+
+.navbar{
+  color:rgb(213, 213, 13)!important;
+}
+
 .btn-primary {
   border-radius:20px;
   border: 0;
