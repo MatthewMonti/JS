@@ -23,7 +23,10 @@ a.nav-link{
   color:rgb(213, 213, 13)!important;
 }
 
-span.nabar-toggler-icon{
+button.navbar-toggle-icon{
+  color:rgb(213, 213, 13)!important;
+}
+span.navbar-toggler-icon{
   color:rgb(213, 213, 13)!important;
 }
 
