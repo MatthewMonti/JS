@@ -17,6 +17,8 @@ let pokemonRespository = (function () {
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("btn-primary");
+        button.add.toggle(".modal");
+        button.add.
         listpokemon.appendChild(button);
         listElement.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);

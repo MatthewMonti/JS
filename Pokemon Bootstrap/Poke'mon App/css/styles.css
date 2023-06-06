@@ -8,18 +8,12 @@ h1{
   background-color:#db3f3f!important;
 }
 
-.navbar-light .navbar-brand {
-  color:rgb(213, 213, 13);
-  font-family:pokemon_text;
-}
-
-.navbar-light .navbar-toggler {
-  color:rgb(213, 213, 13);
-  border-color: rgba(0,0,0,.1);
-  font-family:pokemon_text;
-}
 a.nav-link{
   font-family:pokemon_text;
+  color:rgb(213, 213, 13)!important;
+}
+
+.navbar-toggler-icon.url {
   color:rgb(213, 213, 13)!important;
 }
 
