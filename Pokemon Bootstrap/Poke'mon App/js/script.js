@@ -13,11 +13,14 @@ let pokemonRespository = (function () {
     }
     function addListItem(pokemon) {
         let listElement = document.querySelector(".pokemon-list");
+        listElement.classList.add('list-group');
         let listpokemon = document.createElement("li");
+        listpokemon.classList.add('list-group-item');
         let button = document.createElement("button");
         button.innerText = pokemon.name;
         button.classList.add("card-btn");
-        button.add.toggle(".modal");
+        button.setAttribute(data-target,"#exampleModal");
+        button.setAttribute(data-toggle,".modal");
         button.add.
         listpokemon.appendChild(button);
         listElement.appendChild(listpokemon);
