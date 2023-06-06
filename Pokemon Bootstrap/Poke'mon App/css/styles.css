@@ -2,6 +2,21 @@
   background-color:#db3f3f!important;
 }
 
+.navbar-light .navbar-brand {
+  color:rgb(213, 213, 13);
+  font-family:pokemon_text;
+}
+
+.navbar-light .navbar-toggler {
+  color:rgb(213, 213, 13);
+  border-color: rgba(0,0,0,.1);
+  font-family:pokemon_text;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color:rgb(213, 213, 13);
+  font-family:pokemon_text;
+}
+
 .btn-primary {
   border-radius:20px;
   border: 0;
