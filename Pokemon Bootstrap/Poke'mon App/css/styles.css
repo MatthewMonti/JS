@@ -23,12 +23,6 @@ a.nav-link{
   color:rgb(213, 213, 13)!important;
 }
 
-.navbar-light .navbar-toggler-icon {
-  color:rgb(213, 213, 13)!important;
-  font-family:pokemon_text;
-}
-
-
 .btn-primary {
   border-radius:20px;
   border: 0;
