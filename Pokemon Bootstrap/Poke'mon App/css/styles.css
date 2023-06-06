@@ -13,12 +13,26 @@ a.nav-link{
   color:rgb(213, 213, 13)!important;
 }
 
-.navbar-light .navbar-brand {
+a.navbar-brand {
   color:rgb(213, 213, 13)!important;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgb(213, 213, 13)!important;;
+  border-color:none!important;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+  border-color:rgb(213, 213, 13)!important;
 }
 
 span.navbar-toggler-icon{
   color:rgb(213, 213, 13)!important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: rgb(213, 213, 13);
 }
 
 
