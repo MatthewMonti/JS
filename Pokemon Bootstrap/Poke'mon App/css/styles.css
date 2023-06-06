@@ -24,7 +24,7 @@ a.nav-link{
 }
 
 button.navbar-toggler-collapsed{
-  color:rgb(213, 213, 13);
+  color:rgb(213, 213, 13)!important;
 }
 
 .btn-primary {
