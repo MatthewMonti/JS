@@ -28,13 +28,11 @@ a.navbar-brand {
   border-color:rgb(213, 213, 13)!important;
 }
 
-span.navbar-toggler-icon{
+.navbar-toggler-icon{
   color:rgb(213, 213, 13)!important;
 }
 
-.navbar-light .navbar-toggler-icon {
-  color: rgb(213, 213, 13);
-}
+
 
 
 .btn-primary {
