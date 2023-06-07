@@ -27,11 +27,9 @@ let pokemonRespository = (function () {
         });
     }
     function loadList() {
-        return fetch(apiUrl)
-          .then(function(response) {
+        return fetch(apiUrl).then(function(response) {
             return response.json();
-          })
-          .then(function(json) {
+        }).then(function(json) {
             json.results.forEach(function(item) {
               let pokemon = {
                 name: item.name,
@@ -39,14 +37,10 @@ let pokemonRespository = (function () {
               };
               add(pokemon);
             });
-      
-            // Sort the pokemonList alphabetically by name
-            pokemonList.sort(function(a, b) {
-              return a.name.localeCompare(b.name);
-            });
+          }).catch(function (e) {
+                console.error(e);
           })
-          .catch(function(e) {
-            console.error(e);
+    }
 
     function loadDetails(item) {
         let url = item.detailsUrl;
