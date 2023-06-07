@@ -20,7 +20,7 @@ let pokemonRespository = (function () {
         button.innerText = pokemon.name;
         button.classList.add("card-btn");
         listpokemon.appendChild(button);
-        pokemon_desk.appendChild(listpokemon);
+        pokemon_deck.appendChild(listpokemon);
         addPokemonEventListener(button, pokemon);
     }
     function showDetails(pokemon) {
