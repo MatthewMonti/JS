@@ -52,9 +52,9 @@ margin-top:50px;
   color: rgb(213, 213, 13);
   cursor: pointer;
   text-align: center;
-  font-size:2rem;
-  height:400px;
-  width:250px;
+  font-size:1rem;
+  height:200px;
+  width:150px;
 }
 
 html,body,li.col.list-group-item{
