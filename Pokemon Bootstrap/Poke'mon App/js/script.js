@@ -40,7 +40,7 @@ let pokemonRespository = (function () {
               add(pokemon);
             });
       
-            // Sort the pokemonList alphabetically by name
+            //Make Sort the pokemonList alphabetically by name
             pokemonList.sort(function(a, b) {
               return a.name.localeCompare(b.name);
             });
