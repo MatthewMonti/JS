@@ -37,6 +37,10 @@ font-size:3rem;
 margin-bottom:50px;
 margin-top:50px;
 }
+.pokemon-list{
+  list-style:none;
+  text-align:center;
+}
 
 .card-btn {
   border-radius: 20px;
