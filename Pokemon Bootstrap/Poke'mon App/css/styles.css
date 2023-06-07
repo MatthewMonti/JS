@@ -47,13 +47,13 @@ margin-top:50px;
   color: rgb(213, 213, 13);
   cursor: pointer;
   text-align: center;
+  margin:100px;
 }
 
 .pokemon-list{
   list-style:none;
   text-align:center;
   column-count: 6;
-  margin:100px;
 }
 
 html,body,li.col.list-group-item{
