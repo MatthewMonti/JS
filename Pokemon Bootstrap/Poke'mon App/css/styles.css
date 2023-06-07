@@ -53,6 +53,7 @@ margin-top:50px;
   list-style:none;
   text-align:center;
   column-count: 6;
+  margin:100px;
 }
 
 html,body,li.col.list-group-item{
