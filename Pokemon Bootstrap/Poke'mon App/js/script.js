@@ -14,10 +14,8 @@ let pokemonRespository = (function () {
     function addListItem(pokemon) {
         let pokemon_deck = document.querySelector(".pokemon-list");
         pokemon_deck.classList.add("list-group");
-        pokemon_deck.classList.add("row");
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
-        listpokemon.classList.add("col-10");
         let button = document.createElement("button");
         button.classList.toggle(".modal");
         button.dataset.target = "#exampleModal";
