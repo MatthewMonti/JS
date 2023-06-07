@@ -47,7 +47,7 @@ margin-top:50px;
   color: rgb(213, 213, 13);
   cursor: pointer;
   text-align: center;
-  margin:auto;
+  padding:50px;
 }
 
 .pokemon-list{
