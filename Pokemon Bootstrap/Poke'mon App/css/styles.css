@@ -54,12 +54,6 @@ margin-top:50px;
   width:150px;
 }
 
-.pokemon-list{
-  list-style:none;
-  text-align:center;
-  column-count: 6;
-}
-
 html,body,li.col.list-group-item{
   background-color:#db3f3f;
 }
