@@ -31,12 +31,20 @@ a.navbar-brand {
 
 h1{
 font-family: pokemon_text!important;
-color:rgb(213, 213, 13)!important;
+color:black;
 text-align:center;
 font-size:3rem;
 margin-bottom:50px;
 margin-top:50px;
 }
+
+.modal-content{
+  border-color:rgb(213, 213, 13)!important;
+}
+
+
+
+
 
 .card-btn {
   border-radius: 20px;
