@@ -101,12 +101,6 @@ let pokemonRespository = (function () {
         modalBody.append(typesElement);
         modalBody.append(abilitiesElement);
 
-        modalContainer.addEventListener('click', (e) => {
-            let target = e.target;
-            if (target === modalContainer) {
-              hideModal();
-            }
-          });
     }
 
     function hideModal() {
@@ -119,6 +113,13 @@ let pokemonRespository = (function () {
         if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
             hideModal();
         }
+
+        modalContainer.addEventListener('click', (e) => {
+            let target = e.target;
+            if (target === modalContainer) {
+              hideModal();
+            }
+          });
     });
 
     return {
