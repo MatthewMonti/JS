@@ -31,15 +31,23 @@ a.navbar-brand {
 
 h1{
 font-family: pokemon_text!important;
-color:black;
+color:rgb(213, 213, 13)!important;
 text-align:center;
 font-size:3rem;
 margin-bottom:50px;
 margin-top:50px;
 }
+h5{
+  font-family: pokemon_text!important;
+  color:rgb(213, 213, 13)!important;
+  text-align:center;
+}
+
+
+
 
 .modal-content{
-  border-color:rgb(213, 213, 13)!important;
+ background-color:#db3f3f;
 }
 
 
