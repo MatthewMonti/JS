@@ -29,7 +29,8 @@ let pokemonRespository = (function () {
     }
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function(){
-            showModal(pokemon.name, pokemon.name + ' Height is: ' + pokemon.height, pokemon.imageUrl);
+            showModal(pokemon);
+            console.log(pokemon);
         });
     }
     function loadList() {
@@ -65,12 +66,13 @@ let pokemonRespository = (function () {
             item.imageUrl = details.sprites.front_default;
             item.height = details.height;
             item.types = details.types;
+            item.weight = details.weight;
         }).catch(function(e){
             console.error(e);
         });
     }
 
-    function showModal(item) {
+    function showModal(pokemon) {
         let modalBody = $(".modal-body");
         let modalTitle = $(".modal-title");
         let modalHeader = $(".modal-header");
@@ -81,18 +83,18 @@ let pokemonRespository = (function () {
         modalBody.empty();
         
         //creating element for name in modal content
-        let nameElement = $("<h1>" + item.name + "</h1>");
+        let nameElement = $("<h1>" + pokemon.name + "</h1>");
         // // creating img in modal content
         let imageElement = $('<img class="modal-img" style="width:50%">');
-        imageElement.attr("src", item.imageUrl);
+        imageElement.attr("src", pokemon.imageUrl);
         // //creating element for height in modal content
-        let heightElement = $("<p>" + "height : " + item.height + "</p>");
+        let heightElement = $("<p>" + "height : " + pokemon.height + "</p>");
         // //creating element for weight in modal content 
-        let weightElement = $("<p>" + "weight : " + item.weight + "</p>" );
+        let weightElement = $("<p>" + "weight : " + pokemon.weight + "</p>" );
         // //creating element for type in modal content 
-        let typesElement = $("<p>" + "types : " + item.types + "</p>");
+        let typesElement = $("<p>" + "types : " + pokemon.types + "</p>");
         // // creating elment for abilities in modal content
-        let abilitiesElement = $("<p>" + "abilities : " + item.abilities + "</p>");
+        let abilitiesElement = $("<p>" + "abilities : " + pokemon.abilities + "</p>");
 
         modalTitle.append(nameElement);
         modalBody.append(imageElement);
