@@ -67,6 +67,7 @@ let pokemonRespository = (function () {
             item.height = details.height;
             item.types = details.types;
             item.weight = details.weight;
+            item.abilities = details.abilities;
         }).catch(function(e){
             console.error(e);
         });
@@ -92,7 +93,10 @@ let pokemonRespository = (function () {
         // //creating element for weight in modal content 
         let weightElement = $("<p>" + "WEIGHT : " + pokemon.weight + "</p>" );
         // //creating element for type in modal content 
-        let typesElement = $("<p>" + "TYPES : " + pokemon.types + "</p>");
+        let typesElement = document.querySelector('.pokemon-types');
+        typesElement.innerText = 'TYPES: ' + pokemon.types.map(getAllTypes).join(' & ');
+           function getAllTypes(item) {
+             return [item.type.name]}
         // // creating elment for abilities in modal content
         let abilitiesElement = $("<p>" + "ABILITIES : " + pokemon.abilities + "</p>");
 

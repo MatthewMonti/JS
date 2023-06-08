@@ -49,13 +49,14 @@ p{
 
 .modal-header, .modal-footer{
   border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .modal-content{
  background-color:rgb(213, 213, 13)!important;
 }
 
-.btn-secondary, .btn-primary {
+.btn-secondary {
   font-family: pokemon_text!important;
   background: purple;
   color: rgb(213, 213, 13);
