@@ -47,6 +47,10 @@ p{
   font-family: pokemon_text!important;
 }
 
+.modal-header, .modal-footer{
+  border-bottom: 1px solid black;
+}
+
 .modal-content{
  background-color:rgb(213, 213, 13)!important;
 }
