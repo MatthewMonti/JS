@@ -12,16 +12,11 @@ let pokemonRespository = (function () {
         return pokemonList;
     }
     function addListItem(pokemon) {
-        let pokedex_row = document.createElement("div");
-        pokedex_row.classList.add("row");
-        
-
-
-
         let pokemon_deck = document.querySelector(".pokemon-list");
+        pokemon_deck.classListadd("row");
         pokemon_deck.classList.add("list-group");
-    
         let listpokemon = document.createElement("li");
+        listpokemon.classList.add("col");
         listpokemon.classList.add("list-group-item");
         let button = document.createElement("button");
         button.classList.toggle(".modal");
