@@ -39,19 +39,23 @@ margin-top:50px;
 }
 h5{
   font-family: pokemon_text!important;
-  color:rgb(213, 213, 13)!important;
+  color:black;
   text-align:center;
 }
-
-
-
-
-.modal-content{
- background-color:#db3f3f;
+p{
+  color:black;
+  font-family: pokemon_text!important;
 }
 
+.modal-content{
+ background-color:rgb(213, 213, 13)!important;
+}
 
-
+btn btn-secondary, btn btn-primary {
+  font-family: pokemon_text!important;
+  background: purple;
+  color: rgb(213, 213, 13);
+}
 
 
 .card-btn {
