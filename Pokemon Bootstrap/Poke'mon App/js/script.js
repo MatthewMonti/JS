@@ -108,7 +108,7 @@ let pokemonRespository = (function () {
         modalBody.append(imageElement);
         modalBody.append(heightElement);
         modalBody.append(weightElement);
-        modalBody.append(typesElement);
+        // modalBody.append(typesElement);
         modalBody.append(abilitiesElement);
 
     }
