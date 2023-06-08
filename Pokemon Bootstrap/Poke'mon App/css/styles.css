@@ -77,6 +77,10 @@ p{
   width:150px;
 }
 
+.col list-group-item{
+  border:none;
+}
+
 html,body,li.col.list-group-item{
   background-color:#db3f3f;
 }
