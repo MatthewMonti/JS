@@ -22,14 +22,7 @@ let pokemonRespository = (function () {
         let pokedex_col2 = document.createElement("div");
         pokedex_col2.classList.add("col"); 
         let pokedex_col3 = document.createElement("div");
-        pokedex_col3.classList.add("col"); 
-        let pokedex_col4 = document.createElement("div");
-        pokedex_col4.classList.add("col"); 
-        let pokedex_col5 = document.createElement("div");
-        pokedex_col5.classList.add("col"); 
-        let pokedex_col6 = document.createElement("div");
-        pokedex_col6.classList.add("col"); 
-
+        pokedex_col3.classList.add("col");  
         
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
@@ -45,16 +38,10 @@ let pokemonRespository = (function () {
         pokedex_row1.appendChild(pokedex_col1);
         pokedex_row1.appendChild(pokedex_col2);
         pokedex_row1.appendChild(pokedex_col3);
-        pokedex_row1.appendChild(pokedex_col4);
-        pokedex_row1.appendChild(pokedex_col5);
-        pokedex_row1.appendChild(pokedex_col6);
 
         pokedex_col1.appendChild(listpokemon);
         pokedex_col2.appendChild(listpokemon);
         pokedex_col3.appendChild(listpokemon);
-        pokedex_col4.appendChild(listpokemon);
-        pokedex_col5.appendChild(listpokemon);
-        pokedex_col6.appendChild(listpokemon);
         
         listpokemon.appendChild(button);
         addPokemonEventListener(button, pokemon);
