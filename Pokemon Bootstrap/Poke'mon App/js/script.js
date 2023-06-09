@@ -40,7 +40,7 @@ let pokemonRespository = (function () {
         pokedex_row1.appendChild(pokedex_col3);
 
         pokedex_col1.appendChild(pokemon_item);
-        pokedex_col2.appendChild(pokemon_idem);
+        pokedex_col2.appendChild(pokemon_item);
         pokedex_col3.appendChild(pokemon_item);
 
 
