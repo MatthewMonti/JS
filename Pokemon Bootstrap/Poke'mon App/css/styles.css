@@ -100,3 +100,7 @@ html,body,li.col.list-group-item{
 li.list-group-item{
   background-color:#db3f3f;
 }
+
+imageElement{
+  cursor:none;
+}
