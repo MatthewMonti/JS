@@ -25,8 +25,8 @@ let pokemonRespository = (function () {
         let pokedex_col3 = document.createElement("div");
         pokedex_col3.classList.add("col");  
         
-        let listpokemon = document.createElement("li");
-        listpokemon.classList.add("list-group-item");
+        let pokemon_item = document.createElement("li");
+        pokemon_item.classList.add("list-group-item");
 
         let button = document.createElement("button");
         button.setAttribute('data-toggle', 'modal');
@@ -34,17 +34,18 @@ let pokemonRespository = (function () {
         button.innerText = pokemon.name;
         button.classList.add("card-btn");
 
-        pokemon_deck.appendChild(listpokemon);
         pokemon_deck.appendChild(pokedex_row1);
         pokedex_row1.appendChild(pokedex_col1);
         pokedex_row1.appendChild(pokedex_col2);
         pokedex_row1.appendChild(pokedex_col3);
 
-        pokedex_col1.appendChild(listpokemon);
-        pokedex_col2.appendChild(listpokemon);
-        pokedex_col3.appendChild(listpokemon);
+        pokedex_col1.appendChild(pokemon_item);
+        pokedex_col2.appendChild(pokemon_idem);
+        pokedex_col3.appendChild(pokemon_item);
+
+
         
-        listpokemon.appendChild(button);
+        pokemon_item.appendChild(button);
         addPokemonEventListener(button, pokemon);
     }
     function showDetails(pokemon) {
