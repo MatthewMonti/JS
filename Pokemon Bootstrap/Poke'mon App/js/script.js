@@ -30,7 +30,7 @@ let pokemonRespository = (function () {
         button.classList.add("card-btn");
 
         pokemon_deck.appendChild(listpokemon);
-        pokemon_deck.appendChild(pokemon_row1);
+        pokemon_deck.appendChild(pokedex_row1);
         pokedex_row1.appendChild(pokedex_col);
         pokedex_col.appendChild(listpokemon);
         listpokemon.appendChild(button);
