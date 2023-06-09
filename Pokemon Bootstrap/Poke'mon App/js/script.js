@@ -16,7 +16,7 @@ let pokemonRespository = (function () {
         pokemon_deck.classList.add("list-group");
         pokemon_deck.classList.add("container");
 
-        let pokedex_row1 = document.createElement("div");
+        let pokedex_row = document.createElement("div");
         pokedex_row.classList.add("row");
         let pokedex_col1 = document.createElement("div");
         pokedex_col1.classList.add("col");  
