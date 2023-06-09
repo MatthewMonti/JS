@@ -39,9 +39,9 @@ let pokemonRespository = (function () {
         pokedex_row.appendChild(pokedex_col2);
         pokedex_row.appendChild(pokedex_col3);
 
-        pokedex_col1.appendChild(pokemon_item.list-group-item);
-        pokedex_col2.appendChild(pokemon_item.list-group-item);
-        pokedex_col3.appendChild(pokemon_item.list-group-item);
+        pokedex_col1.appendChild(pokemon_item.li.list-group-item);
+        pokedex_col2.appendChild(pokemon_item.li.list-group-item);
+        pokedex_col3.appendChild(pokemon_item.li.list-group-item);
 
 
         
