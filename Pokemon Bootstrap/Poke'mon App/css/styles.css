@@ -2,21 +2,25 @@
 
 .bg-light {
   background-color:#db3f3f!important;
+  cursor:none;
 }
 
 a.nav-link{
   font-family:pokemon_text;
   color:rgb(213, 213, 13)!important;
+  cursor:none;
 }
 
 a.navbar-brand {
   font-family:pokemon_text;
   color:rgb(213, 213, 13)!important;
+  cursor:none;
 }
 
 .navbar-light .navbar-toggler {
   color: rgb(213, 213, 13)!important;
   border-color:none!important;
+  cursor:none;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
@@ -36,30 +40,36 @@ text-align:center;
 font-size:3rem;
 margin-bottom:50px;
 margin-top:50px;
+cursor:none;
 }
 h5{
   font-family: pokemon_text!important;
   color:black;
   text-align:center;
+  cursor:none;
 }
 p{
   color:black;
   font-family: pokemon_text!important;
+  cursor:none;
 }
 
 .modal-header, .modal-footer{
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+  cursor:none;
 }
 
 .modal-content{
  background-color:rgb(213, 213, 13)!important;
+ cursor:none;
 }
 
 .btn-secondary {
   font-family: pokemon_text!important;
   background: purple;
   color: rgb(213, 213, 13);
+  cursor:none;
 }
 
 
@@ -75,10 +85,12 @@ p{
   font-size:1rem;
   height:200px;
   width:150px;
+  cursor:none;
 }
 
 .pokemon-list row list-group{
   border:none;
+  cursor:none;
 }
 
 html,body,li.col.list-group-item{
