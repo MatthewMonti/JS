@@ -32,7 +32,7 @@ let pokemonRespository = (function () {
         button.innerText = pokemon.name;
         button.classList.add("card-btn");
         pokemon_deck.appendChild(listpokemon);
-        pokedex_row1.appendChild(pokemon_col);
+        pokedex_row1.appendChild(pokedex_col);
         pokedex_col.appendChild(listpokemon);
         listpokemon.appendChild(button);
         addPokemonEventListener(button, pokemon);
