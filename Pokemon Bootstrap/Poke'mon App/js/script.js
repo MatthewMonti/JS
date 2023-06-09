@@ -45,7 +45,7 @@ let pokemonRespository = (function () {
 
 
         
-        li.list-group-item.appendChild(button);
+        pokemon_item.appendChild(button);
         addPokemonEventListener(button, pokemon);
     }
     function showDetails(pokemon) {
