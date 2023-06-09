@@ -19,6 +19,12 @@ let pokemonRespository = (function () {
         pokedex_row1.classList.add("row");
         let pokedex_col = document.createElement("div");
         pokedex_col.classList.add("col");
+        pokedex__row1.appendChild(pokedex_col);
+        pokedex__row1.appendChild(pokedex_col);
+        pokedex__row1.appendChild(pokedex_col);
+        pokedex__row1.appendChild(pokedex_col);
+        pokedex__row1.appendChild(pokedex_col);
+        pokedex__row1.appendChild(pokedex_col);   
         
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
