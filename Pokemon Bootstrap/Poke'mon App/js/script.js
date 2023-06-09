@@ -16,7 +16,7 @@ let pokemonRespository = (function () {
         pokemon_deck.classList.add("row");
         pokemon_deck.classList.add("list-group");
         let listpokemon = document.createElement("li");
-        listpokemon.classList.add("col");
+        listpokemon.classList.add("col-sm-4");
         listpokemon.classList.add("list-group-item");
         let button = document.createElement("button");
         button.setAttribute('data-toggle', 'modal');
