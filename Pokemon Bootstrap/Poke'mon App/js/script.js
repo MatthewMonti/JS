@@ -23,15 +23,14 @@ let pokemonRespository = (function () {
         let listpokemon = document.createElement("li");
         listpokemon.classList.add("list-group-item");
 
-  
-
-
         let button = document.createElement("button");
         button.setAttribute('data-toggle', 'modal');
         button.setAttribute('data-target', '#exampleModal');
         button.innerText = pokemon.name;
         button.classList.add("card-btn");
+
         pokemon_deck.appendChild(listpokemon);
+        pokemon_deck.appendChild(pokemon_row1);
         pokedex_row1.appendChild(pokedex_col);
         pokedex_col.appendChild(listpokemon);
         listpokemon.appendChild(button);
