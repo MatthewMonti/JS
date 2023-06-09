@@ -23,11 +23,6 @@ a.navbar-brand {
   user-select:none;
 }
 
-.navbar-toggler:focus, .navbar-toggler:hover {
-  text-decoration: none;
-  border-color:rgb(213, 213, 13)!important;
-}
-
 @font-face{
   font-family: pokemon_text;
   src:url(Pokemon_Solid.ttf);
