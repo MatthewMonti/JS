@@ -78,6 +78,8 @@ p{
   cursor: pointer;
   text-align: center;
   user-select:none;
+  height: 200px; 
+  width: 150px;
 }
 
 .pokemon-list row list-group{
