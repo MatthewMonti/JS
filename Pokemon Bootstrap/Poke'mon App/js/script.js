@@ -46,7 +46,6 @@ let pokemonRespository = (function () {
 
         
         pokemon_item.appendChild(button);
-        pokemon_item.appendChild(pokemon_deck)
         addPokemonEventListener(button, pokemon);
     }
     function showDetails(pokemon) {
