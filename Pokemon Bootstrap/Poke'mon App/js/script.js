@@ -11,7 +11,7 @@ let pokemonRespository = (function () {
     function getAll() {
         return pokemonList;
     }
-    function addListItem(pokemon) {
+    /*function addListItem(pokemon) {
         let pokemon_deck = document.querySelector(".pokemon-list");
         pokemon_deck.classList.add("list-group");
         pokemon_deck.classList.add("container");
@@ -47,7 +47,48 @@ let pokemonRespository = (function () {
         
         pokemon_item.appendChild(button);
         addPokemonEventListener(button, pokemon);
+    }*/
+
+
+    function addListItem(pokemon) {
+        let pokemon_deck = document.querySelector(".pokemon-list");
+        pokemon_deck.classList.add("list-group");
+    
+        let pokedex_row = document.createElement("div");
+        pokedex_row.classList.add("row");
+            
+        // Create three columns
+        for(let i = 0; i < 3; i++){
+            let pokedex_col = document.createElement("div");
+            pokedex_col.classList.add("col");  
+    
+            let pokemon_item = document.createElement("li");
+            pokemon_item.classList.add("list-group-item");
+    
+            let button = document.createElement("button");
+            button.setAttribute('data-toggle', 'modal');
+            button.setAttribute('data-target', '#exampleModal');
+            button.innerText = pokemon.name;
+            button.classList.add("card-btn");
+    
+            // Add event listener to the button
+            addPokemonEventListener(button, pokemon);
+    
+            // Add button to the list item, list item to the column, and column to the row
+            pokemon_item.appendChild(button);
+            pokedex_col.appendChild(pokemon_item);
+            pokedex_row.appendChild(pokedex_col);
+        }
+    
+        // Add row to the deck
+        pokemon_deck.appendChild(pokedex_row);
     }
+
+
+
+
+
+
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function(){
             showModal(pokemon);
