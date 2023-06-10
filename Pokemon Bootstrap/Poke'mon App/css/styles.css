@@ -96,3 +96,7 @@ li.list-group-item{
 imageElement{
   user-select:none;
 }
+
+li.list-group-item{
+  border:none;
+}
