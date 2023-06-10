@@ -49,7 +49,6 @@ let pokemonRespository = (function () {
         addPokemonEventListener(button, pokemon);
     }*/
 
-
     function addListItem(pokemon) {
         let pokemon_deck = document.querySelector(".pokemon-list");
         pokemon_deck.classList.add("list-group");
@@ -58,7 +57,7 @@ let pokemonRespository = (function () {
         pokedex_row.classList.add("row");
             
         // Create three columns
-        for(let i = 0; i < 6; i++){
+        for(let i = 0; i < 3; i++){
             let pokedex_col = document.createElement("div");
             pokedex_col.classList.add("col");  
     
@@ -83,8 +82,6 @@ let pokemonRespository = (function () {
         // Add row to the deck
         pokemon_deck.appendChild(pokedex_row);
     }
-
-
 
 
 
