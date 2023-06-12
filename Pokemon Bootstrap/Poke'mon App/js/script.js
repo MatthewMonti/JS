@@ -57,7 +57,7 @@ let pokemonRespository = (function () {
         pokedex_row.classList.add("row");
             
         // Create three columns
-        for(let i = 0; i < 3; i++){
+        for(let i = 1; i < 3; i++){
             let pokedex_col = document.createElement("div");
             pokedex_col.classList.add("col");  
     
