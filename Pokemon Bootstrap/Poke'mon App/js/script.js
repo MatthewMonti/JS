@@ -39,7 +39,6 @@ let pokemonRespository = (function () {
             pokemon_item.appendChild(button);
             pokedex_col.appendChild(pokemon_item);
             pokedex_row.appendChild(pokedex_col);
-        }
     
         // Add row to the deck
         pokemon_deck.appendChild(pokedex_row);
