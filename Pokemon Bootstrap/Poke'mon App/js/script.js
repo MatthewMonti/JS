@@ -11,53 +11,15 @@ let pokemonRespository = (function () {
     function getAll() {
         return pokemonList;
     }
-    /*function addListItem(pokemon) {
-        let pokemon_deck = document.querySelector(".pokemon-list");
-        pokemon_deck.classList.add("list-group");
-        pokemon_deck.classList.add("container");
-   
 
-        let pokedex_row = document.createElement("div");
-        pokedex_row.classList.add("row");
-        let pokedex_col1 = document.createElement("div");
-        pokedex_col1.classList.add("col");  
-        let pokedex_col2 = document.createElement("div");
-        pokedex_col2.classList.add("col"); 
-        let pokedex_col3 = document.createElement("div");
-        pokedex_col3.classList.add("col");  
-        
-        let pokemon_item = document.createElement("li");
-        pokemon_item.classList.add("list-group-item");
-
-        let button = document.createElement("button");
-        button.setAttribute('data-toggle', 'modal');
-        button.setAttribute('data-target', '#exampleModal');
-        button.innerText = pokemon.name;
-        button.classList.add("card-btn");
-
-        pokemon_deck.appendChild(pokedex_row);
-        pokedex_row.appendChild(pokedex_col1);
-        pokedex_row.appendChild(pokedex_col2);
-        pokedex_row.appendChild(pokedex_col3);
-
-        pokedex_col1.appendChild(pokemon_item);
-        pokedex_col2.appendChild(pokemon_item);
-        pokedex_col3.appendChild(pokemon_item);
-
-        
-        pokemon_item.appendChild(button);
-        addPokemonEventListener(button, pokemon);
-    }*/
-
+    let pokedex_row = document.createElement("div");
+    pokedex_row.classList.add("row");
+  
     function addListItem(pokemon) {
         let pokemon_deck = document.querySelector(".pokemon-list");
         pokemon_deck.classList.add("list-group");
-    
-        let pokedex_row = document.createElement("div");
-        pokedex_row.classList.add("row");
             
-        // Create three columns
-        for(let i = 1; i < 3; i++){
+        // Create three column
             let pokedex_col = document.createElement("div");
             pokedex_col.classList.add("col");  
     
@@ -116,22 +78,6 @@ let pokemonRespository = (function () {
           });
     }
 
-    // function loadDetails(item) {
-        // let url = item.detailsUrl;
-        // return fetch(url).then(function (response){
-            // return response.json();
-        // /}).then(function (details) {
-            // details to the pokemon
-            // item.imageUrl = details.sprites.front_default;
-            // /item.height = details.height;
-            // /item.types = details.types;
-            // item.weight = details.weight;
-            // item.abilities = details.abilities;
-        // }).catch(function(e){
-            // console.error(e);
-        // });
-    // }
-
     function loadDetails(item) {
         let url = item.detailsUrl;
         return fetch(url).then(function(response){
@@ -150,9 +96,6 @@ let pokemonRespository = (function () {
             console.error(e);
         });
     }
-
-
-
 
     function showModal(pokemon) {
         let modalBody = $(".modal-body");
