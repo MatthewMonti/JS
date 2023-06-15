@@ -1,6 +1,6 @@
 Matthew Monti Pokemon App
 # Project Description
-A small Pokedex app to display list of Pokemon with their name, height and image.
+A small Pokedex app to display list of Pokemon with their name, height, weight, types, abilities and image.
 
 ## Project dependencies
 Bootstrap, ESLint, Prettier
