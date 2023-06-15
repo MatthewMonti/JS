@@ -1,0 +1,92 @@
+
+
+
+
+a.nav-link, a.navbar-brand, .navbar-light, .navbar-toggler{
+  font-family:pokemon_text;
+  color:rgb(213, 213, 13)!important;
+  user-select:none;
+}
+
+@font-face{
+  font-family: pokemon_text;
+  src:url(Pokemon_Solid.ttf);
+}
+
+h1{
+  font-family: pokemon_text!important;
+  color:rgb(213, 213, 13)!important;
+  text-align:center;
+  font-size:3rem;
+  margin-bottom:50px;
+  margin-top:50px;
+  user-select:none;
+}
+
+h5, p{
+  color:black;
+  font-family: pokemon_text!important;
+  user-select:none;
+
+}
+
+.modal-header, .modal-footer{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  user-select:none;
+}
+
+.modal-content{
+ background-color:rgb(213, 213, 13)!important;
+ user-select:none;
+}
+
+.btn-secondary {
+  font-family: pokemon_text!important;
+  background: purple;
+  color: rgb(213, 213, 13);
+  user-select:none;
+}
+
+.card-btn {
+  border-radius: 20px;
+  border: 0;
+  font-family: pokemon_text!important;
+  font-weight: 600;
+  background: purple;
+  color: rgb(213, 213, 13);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  user-select:none;
+  display:flex;
+  height: 200px; 
+  width: 150px;
+}
+li.list-group-item{
+  justify-content:center;
+  display:flex;
+  background-color:#db3f3f!important;
+}
+
+.card-btn:hover, .btn-secondary:hover{
+  background: rgb(184, 1, 184);
+}
+
+.pokemon-list row list-group{
+  border:none;
+  user-select:none;
+}
+
+html,body,li.col.list-group-item, li-list-group-item, .bg-light{
+  background-color:#db3f3f!important;
+  user-select:none;
+}
+
+imageElement{
+  user-select:none;
+}
+
+li.list-group-item{
+  border:none;
+}
