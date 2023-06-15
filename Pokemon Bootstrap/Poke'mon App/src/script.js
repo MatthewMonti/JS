@@ -165,16 +165,3 @@ let pokemonRespository = (function () {
             pokemonRespository.addListItem(pokemon);
         });
     });
-
-    {
-        "env": {
-          "es6": true,
-          "browser": true
-        },
-        "extends": [
-          "eslint:recommended"
-        ],
-        "rules": {
-          "quotes": ["error", "single"]
-        }
-      }
