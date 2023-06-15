@@ -63,6 +63,12 @@ h5, p{
   height: 200px; 
   width: 150px;
 }
+li.list-group-item{
+  justify-content:center;
+  display:flex;
+  background-color:#db3f3f!important;
+}
+
 .card-btn:hover, .btn-secondary{
   background: rgb(184, 1, 184);
 }
