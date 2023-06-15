@@ -1,25 +1,10 @@
 
 
-.bg-light {
-  background-color:#db3f3f!important;
-  user-select:none;
-}
 
-a.nav-link{
+
+a.nav-link, a.navbar-brand, .navbar-light, .navbar-toggler{
   font-family:pokemon_text;
   color:rgb(213, 213, 13)!important;
-  user-select:none;
-}
-
-a.navbar-brand {
-  font-family:pokemon_text;
-  color:rgb(213, 213, 13)!important;
-  user-select:none;
-}
-
-.navbar-light .navbar-toggler {
-  color: rgb(213, 213, 13)!important;
-  border-color:none!important;
   user-select:none;
 }
 
@@ -89,12 +74,9 @@ p{
   user-select:none;
 }
 
-html,body,li.col.list-group-item{
+html,body,li.col.list-group-item, li-list-group-item, .bg-light{
   background-color:#db3f3f;
-}
-
-li.list-group-item{
-  background-color:#db3f3f;
+  user-select:none;
 }
 
 imageElement{
