@@ -67,6 +67,10 @@ p{
   user-select:none;
 }
 
+.btn-secondary{
+  background: rgb(184, 1, 184);
+}
+
 
 .card-btn {
   border-radius: 20px;
@@ -80,6 +84,9 @@ p{
   user-select:none;
   height: 200px; 
   width: 150px;
+}
+.card-btn:hover{
+  background: rgb(184, 1, 184);
 }
 
 .pokemon-list row list-group{
