@@ -69,7 +69,7 @@ li.list-group-item{
   background-color:#db3f3f!important;
 }
 
-.card-btn:hover, .btn-secondary{
+.card-btn:hover, .btn-secondary:hover{
   background: rgb(184, 1, 184);
 }
 
