@@ -22,16 +22,12 @@ h1{
   margin-top:50px;
   user-select:none;
 }
-h5{
-  font-family: pokemon_text!important;
-  color:black;
-  text-align:center;
-  user-select:none;
-}
-p{
+
+h5, p{
   color:black;
   font-family: pokemon_text!important;
   user-select:none;
+
 }
 
 .modal-header, .modal-footer{
