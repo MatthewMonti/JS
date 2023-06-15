@@ -72,7 +72,7 @@ h5, p{
 }
 
 html,body,li.col.list-group-item, li-list-group-item, .bg-light{
-  background-color:#db3f3f;
+  background-color:#db3f3f!important;
   user-select:none;
 }
 
